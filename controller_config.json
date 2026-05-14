@@ -1,0 +1,10 @@
+{
+  "hostname": "raspberrypi",
+  "username": "raspberrypi",
+  "ssh_port": 22,
+  "last_known_ip": "10.48.29.150",
+  "auth_method": "key",
+  "ssh_key_installed": false,
+  "last_connection": "2026-05-14 13:25:51",
+  "last_discovery": "2026-05-14 12:45:26"
+}

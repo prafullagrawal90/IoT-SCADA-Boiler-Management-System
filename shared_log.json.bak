@@ -1,0 +1,44 @@
+[
+  {
+    "time": "23:19:38",
+    "source": "core",
+    "msg": "SCADA GUI started \u2014 primary controller active",
+    "formatted": "[23:19:38]:[core]->[SCADA GUI started \u2014 primary controller active]"
+  },
+  {
+    "time": "23:19:40",
+    "source": "core",
+    "msg": "Web Dashboard stopped (shutdown signal)",
+    "formatted": "[23:19:40]:[core]->[Web Dashboard stopped (shutdown signal)]"
+  },
+  {
+    "time": "23:19:40",
+    "source": "web(10.248.240.125)",
+    "msg": "Web Dashboard started \u2014 http://10.248.240.125:5000",
+    "formatted": "[23:19:40]:[web(10.248.240.125)]->[Web Dashboard started \u2014 http://10.248.240.125:5000]"
+  },
+  {
+    "time": "23:19:40",
+    "source": "core",
+    "msg": "\u2705 SENSOR RESTORED",
+    "formatted": "[23:19:40]:[core]->[\u2705 SENSOR RESTORED]"
+  },
+  {
+    "time": "23:20:04",
+    "source": "web(127.0.0.1)",
+    "msg": "Web client connected: 127.0.0.1",
+    "formatted": "[23:20:04]:[web(127.0.0.1)]->[Web client connected: 127.0.0.1]"
+  },
+  {
+    "time": "23:20:15",
+    "source": "web(127.0.0.1)",
+    "msg": "Web client disconnected: 127.0.0.1",
+    "formatted": "[23:20:15]:[web(127.0.0.1)]->[Web client disconnected: 127.0.0.1]"
+  },
+  {
+    "time": "23:21:32",
+    "source": "web(127.0.0.1)",
+    "msg": "Web client connected: 127.0.0.1",
+    "formatted": "[23:21:32]:[web(127.0.0.1)]->[Web client connected: 127.0.0.1]"
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "index": 1,
+    "rows": [
+      [
+        "Reference",
+        "Platform",
+        "ML Anomaly Detect.",
+        "Auto Failsafe",
+        "Dual HMI +IPC",
+        "COBS+ CRC",
+        "Open Source",
+        "Domain"
+      ],
+      [
+        "Zare & Iqbal [4]",
+        "ESP32+RPi",
+        "No",
+        "No",
+        "No",
+        "No",
+        "Yes",
+        "General"
+      ],
+      [
+        "Oton & Iqbal [6]",
+        "ESP32",
+        "No",
+        "No",
+        "No",
+        "No",
+        "Yes",
+        "BTS"
+      ],
+      [
+        "Aghenta [5]",
+        "RPi+NodeRED",
+        "No",
+        "No",
+        "No",
+        "No",
+        "Yes",
+        "PV"
+      ],
+      [
+        "Babilonia [7]",
+        "IoT+Cloud",
+        "ML (SVM)",
+        "No",
+        "No",
+        "No",
+        "Part",
+        "Grid"
+      ],
+      [
+        "Al-Ali [29]",
+        "Multi-GW",
+        "No",
+        "No",
+        "Part",
+        "No",
+        "Part",
+        "General"
+      ],
+      [
+        "Jahin et al. [1]",
+        "PLC+Haiwell",
+        "No",
+        "Manual",
+        "No",
+        "No",
+        "No",
+        "Boiler"
+      ],
+      [
+        "Wang & Su [8]",
+        "PC+SCADA",
+        "No",
+        "No",
+        "Part",
+        "No",
+        "No",
+        "Boiler"
+      ],
+      [
+        "Proposed",
+        "Ard+RPi+PC",
+        "5 Algorithms",
+        "Tiered Auto",
+        "Yes",
+        "Yes",
+        "Yes",
+        "Boiler"
+      ]
+    ]
+  }
+]

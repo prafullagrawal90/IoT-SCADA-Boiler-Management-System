@@ -1,0 +1,123 @@
+{"time": "18:12:34", "date": "2026-05-08", "msg": "Test event", "level": "INFO", "source": "TEST", "epoch": 1778244154.0157506}
+{"time": "18:12:34", "date": "2026-05-08", "msg": "Alarm test", "level": "ALARM", "source": "TEST", "epoch": 1778244154.0213397}
+{"time": "18:16:58", "date": "2026-05-08", "msg": "Web Dashboard started", "level": "INFO", "source": "WEB", "epoch": 1778244418.0178103}
+{"time": "18:16:58", "date": "2026-05-08", "msg": "Listening on http://10.248.240.125:5000", "level": "INFO", "source": "WEB", "epoch": 1778244418.0236642}
+{"time": "18:16:58", "date": "2026-05-08", "msg": "Arduino Status: CONNECTED", "level": "OK", "source": "WEB", "epoch": 1778244418.8311975}
+{"time": "18:16:59", "date": "2026-05-08", "msg": "\u2705 SENSOR RESTORED", "level": "INFO", "source": "GUI", "epoch": 1778244419.9531915}
+{"time": "18:18:03", "date": "2026-05-08", "msg": "SCADA shutdown requested", "level": "INFO", "source": "GUI", "epoch": 1778244483.5313492}
+{"time": "18:21:55", "date": "2026-05-08", "msg": "Web Dashboard started", "level": "INFO", "source": "WEB", "epoch": 1778244715.8131926}
+{"time": "18:21:55", "date": "2026-05-08", "msg": "Listening on http://10.248.240.125:5000", "level": "INFO", "source": "WEB", "epoch": 1778244715.820486}
+{"time": "18:21:56", "date": "2026-05-08", "msg": "\u2705 SENSOR RESTORED", "level": "INFO", "source": "GUI", "epoch": 1778244716.5095398}
+{"time": "18:21:56", "date": "2026-05-08", "msg": "Web Dashboard shutting down", "level": "INFO", "source": "WEB", "epoch": 1778244716.629056}
+{"time": "18:23:15", "date": "2026-05-08", "msg": "Web Dashboard started", "level": "INFO", "source": "WEB", "epoch": 1778244795.0022488}
+{"time": "18:23:15", "date": "2026-05-08", "msg": "Listening on http://10.248.240.125:5000", "level": "INFO", "source": "WEB", "epoch": 1778244795.0096567}
+{"time": "18:23:15", "date": "2026-05-08", "msg": "\u2705 SENSOR RESTORED", "level": "INFO", "source": "GUI", "epoch": 1778244795.4157314}
+{"time": "18:23:15", "date": "2026-05-08", "msg": "Arduino Status: CONNECTED", "level": "OK", "source": "WEB", "epoch": 1778244795.8227248}
+{"time": "18:23:41", "date": "2026-05-08", "msg": "\ud83d\udea8 HIGH LEVEL ALARM", "level": "INFO", "source": "GUI", "epoch": 1778244821.5361156}
+{"time": "18:23:41", "date": "2026-05-08", "msg": "ALARM ACTIVE: HIGH WATER LEVEL", "level": "ALARM", "source": "WEB", "epoch": 1778244821.542344}
+{"time": "18:23:46", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 30s", "level": "INFO", "source": "GUI", "epoch": 1778244826.4352283}
+{"time": "18:23:46", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 30s", "level": "INFO", "source": "GUI", "epoch": 1778244826.9195194}
+{"time": "18:23:47", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 29s", "level": "INFO", "source": "GUI", "epoch": 1778244827.416106}
+{"time": "18:23:47", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 29s", "level": "INFO", "source": "GUI", "epoch": 1778244827.9092438}
+{"time": "18:23:48", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 28s", "level": "INFO", "source": "GUI", "epoch": 1778244828.428928}
+{"time": "18:23:48", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 28s", "level": "INFO", "source": "GUI", "epoch": 1778244828.9218457}
+{"time": "18:23:49", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 27s", "level": "INFO", "source": "GUI", "epoch": 1778244829.4178405}
+{"time": "18:23:49", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 27s", "level": "INFO", "source": "GUI", "epoch": 1778244829.909725}
+{"time": "18:23:50", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 26s", "level": "INFO", "source": "GUI", "epoch": 1778244830.4105792}
+{"time": "18:23:50", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 26s", "level": "INFO", "source": "GUI", "epoch": 1778244830.9212127}
+{"time": "18:23:51", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 25s", "level": "INFO", "source": "GUI", "epoch": 1778244831.4251926}
+{"time": "18:23:51", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 25s", "level": "INFO", "source": "GUI", "epoch": 1778244831.9316282}
+{"time": "18:23:52", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 24s", "level": "INFO", "source": "GUI", "epoch": 1778244832.4351268}
+{"time": "18:23:52", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 24s", "level": "INFO", "source": "GUI", "epoch": 1778244832.945859}
+{"time": "18:23:53", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 23s", "level": "INFO", "source": "GUI", "epoch": 1778244833.4538362}
+{"time": "18:23:53", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 23s", "level": "INFO", "source": "GUI", "epoch": 1778244833.9451928}
+{"time": "18:23:54", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 22s", "level": "INFO", "source": "GUI", "epoch": 1778244834.446251}
+{"time": "18:23:54", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 22s", "level": "INFO", "source": "GUI", "epoch": 1778244834.9443338}
+{"time": "18:23:55", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 21s", "level": "INFO", "source": "GUI", "epoch": 1778244835.4612215}
+{"time": "18:23:55", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 21s", "level": "INFO", "source": "GUI", "epoch": 1778244835.9591284}
+{"time": "18:23:56", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 20s", "level": "INFO", "source": "GUI", "epoch": 1778244836.4642148}
+{"time": "18:23:56", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 20s", "level": "INFO", "source": "GUI", "epoch": 1778244836.9556046}
+{"time": "18:23:57", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 19s", "level": "INFO", "source": "GUI", "epoch": 1778244837.4628315}
+{"time": "18:23:57", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 19s", "level": "INFO", "source": "GUI", "epoch": 1778244837.9594395}
+{"time": "18:23:58", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 18s", "level": "INFO", "source": "GUI", "epoch": 1778244838.4566867}
+{"time": "18:23:58", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 18s", "level": "INFO", "source": "GUI", "epoch": 1778244838.9666123}
+{"time": "18:23:59", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 17s", "level": "INFO", "source": "GUI", "epoch": 1778244839.4568107}
+{"time": "18:23:59", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 17s", "level": "INFO", "source": "GUI", "epoch": 1778244839.9695175}
+{"time": "18:24:00", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 16s", "level": "INFO", "source": "GUI", "epoch": 1778244840.4639282}
+{"time": "18:24:00", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 16s", "level": "INFO", "source": "GUI", "epoch": 1778244840.9640698}
+{"time": "18:24:01", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 15s", "level": "INFO", "source": "GUI", "epoch": 1778244841.470491}
+{"time": "18:24:01", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 15s", "level": "INFO", "source": "GUI", "epoch": 1778244841.9588232}
+{"time": "18:24:02", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 14s", "level": "INFO", "source": "GUI", "epoch": 1778244842.4568179}
+{"time": "18:24:02", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 14s", "level": "INFO", "source": "GUI", "epoch": 1778244842.9642737}
+{"time": "18:24:03", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 13s", "level": "INFO", "source": "GUI", "epoch": 1778244843.459488}
+{"time": "18:24:03", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 13s", "level": "INFO", "source": "GUI", "epoch": 1778244843.9576316}
+{"time": "18:24:04", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 12s", "level": "INFO", "source": "GUI", "epoch": 1778244844.4710207}
+{"time": "18:24:04", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 12s", "level": "INFO", "source": "GUI", "epoch": 1778244844.9559517}
+{"time": "18:24:05", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 11s", "level": "INFO", "source": "GUI", "epoch": 1778244845.4668415}
+{"time": "18:24:05", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 11s", "level": "INFO", "source": "GUI", "epoch": 1778244845.9679725}
+{"time": "18:24:06", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 10s", "level": "INFO", "source": "GUI", "epoch": 1778244846.4577339}
+{"time": "18:24:06", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 10s", "level": "INFO", "source": "GUI", "epoch": 1778244846.9721558}
+{"time": "18:24:07", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 9s", "level": "INFO", "source": "GUI", "epoch": 1778244847.4572864}
+{"time": "18:24:07", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 9s", "level": "INFO", "source": "GUI", "epoch": 1778244847.9576523}
+{"time": "18:24:08", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 8s", "level": "INFO", "source": "GUI", "epoch": 1778244848.4663863}
+{"time": "18:24:08", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 8s", "level": "INFO", "source": "GUI", "epoch": 1778244848.9577768}
+{"time": "18:24:09", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 7s", "level": "INFO", "source": "GUI", "epoch": 1778244849.4686723}
+{"time": "18:24:09", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 7s", "level": "INFO", "source": "GUI", "epoch": 1778244849.9650214}
+{"time": "18:24:10", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 6s", "level": "INFO", "source": "GUI", "epoch": 1778244850.4640157}
+{"time": "18:24:10", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 6s", "level": "INFO", "source": "GUI", "epoch": 1778244850.9680765}
+{"time": "18:24:11", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 5s", "level": "INFO", "source": "GUI", "epoch": 1778244851.4775238}
+{"time": "18:24:11", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 5s", "level": "INFO", "source": "GUI", "epoch": 1778244851.9569423}
+{"time": "18:24:12", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 4s", "level": "INFO", "source": "GUI", "epoch": 1778244852.4690275}
+{"time": "18:24:12", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 4s", "level": "INFO", "source": "GUI", "epoch": 1778244852.968094}
+{"time": "18:24:13", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 3s", "level": "INFO", "source": "GUI", "epoch": 1778244853.4678373}
+{"time": "18:24:13", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 3s", "level": "INFO", "source": "GUI", "epoch": 1778244853.9652855}
+{"time": "18:24:14", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 2s", "level": "INFO", "source": "GUI", "epoch": 1778244854.4615276}
+{"time": "18:24:14", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 2s", "level": "INFO", "source": "GUI", "epoch": 1778244854.9583666}
+{"time": "18:24:15", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 1s", "level": "INFO", "source": "GUI", "epoch": 1778244855.4587796}
+{"time": "18:24:15", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 1s", "level": "INFO", "source": "GUI", "epoch": 1778244855.9601734}
+{"time": "18:24:16", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 0s", "level": "INFO", "source": "GUI", "epoch": 1778244856.4644058}
+{"time": "18:24:16", "date": "2026-05-08", "msg": "\ud83e\udde0 ML [SINGLE]: Auto-emergency countdown: 0s", "level": "INFO", "source": "GUI", "epoch": 1778244856.9584398}
+{"time": "18:24:16", "date": "2026-05-08", "msg": "Override -> ON", "level": "WARN", "source": "WEB", "epoch": 1778244856.9587533}
+{"time": "18:24:18", "date": "2026-05-08", "msg": "\u2705 ALARM CLEARED", "level": "INFO", "source": "GUI", "epoch": 1778244858.9374943}
+{"time": "18:24:19", "date": "2026-05-08", "msg": "Alarm cleared: HIGH WATER LEVEL", "level": "OK", "source": "WEB", "epoch": 1778244859.3723233}
+{"time": "18:24:36", "date": "2026-05-08", "msg": "Command sent: reset_override", "level": "INFO", "source": "GUI", "epoch": 1778244876.8709571}
+{"time": "18:24:37", "date": "2026-05-08", "msg": "Override -> OFF", "level": "INFO", "source": "WEB", "epoch": 1778244877.838336}
+{"time": "18:24:50", "date": "2026-05-08", "msg": "\ud83d\udea8 HIGH LEVEL ALARM", "level": "INFO", "source": "GUI", "epoch": 1778244890.9359055}
+{"time": "18:24:51", "date": "2026-05-08", "msg": "ALARM ACTIVE: HIGH WATER LEVEL", "level": "ALARM", "source": "WEB", "epoch": 1778244891.5167403}
+{"time": "18:24:51", "date": "2026-05-08", "msg": "\u2705 ALARM CLEARED", "level": "INFO", "source": "GUI", "epoch": 1778244891.5752373}
+{"time": "18:24:52", "date": "2026-05-08", "msg": "Alarm cleared: HIGH WATER LEVEL", "level": "OK", "source": "WEB", "epoch": 1778244892.331131}
+{"time": "18:25:26", "date": "2026-05-08", "msg": "Heater -> ON", "level": "INFO", "source": "WEB", "epoch": 1778244926.937902}
+{"time": "18:26:58", "date": "2026-05-08", "msg": "SCADA shutdown requested", "level": "INFO", "source": "GUI", "epoch": 1778245018.034813}
+{"time": "18:26:58", "date": "2026-05-08", "msg": "Web Dashboard shutting down", "level": "INFO", "source": "WEB", "epoch": 1778245018.4622989}
+{"time": "18:28:28", "date": "2026-05-08", "msg": "Web Dashboard started", "level": "INFO", "source": "WEB", "epoch": 1778245108.361577}
+{"time": "18:28:28", "date": "2026-05-08", "msg": "Listening on http://10.248.240.125:5000", "level": "INFO", "source": "WEB", "epoch": 1778245108.369242}
+{"time": "18:28:28", "date": "2026-05-08", "msg": "Heater -> ON", "level": "INFO", "source": "WEB", "epoch": 1778245108.5777974}
+{"time": "18:28:28", "date": "2026-05-08", "msg": "Mqtt Status: CONNECTED", "level": "OK", "source": "WEB", "epoch": 1778245108.5994678}
+{"time": "18:28:28", "date": "2026-05-08", "msg": "Arduino Status: CONNECTED", "level": "OK", "source": "WEB", "epoch": 1778245108.623967}
+{"time": "18:28:29", "date": "2026-05-08", "msg": "\u2705 SENSOR RESTORED", "level": "INFO", "source": "GUI", "epoch": 1778245109.0489361}
+{"time": "18:29:49", "date": "2026-05-08", "msg": "Motor -> ON", "level": "INFO", "source": "WEB", "epoch": 1778245189.786574}
+{"time": "18:30:01", "date": "2026-05-08", "msg": "Motor -> OFF", "level": "INFO", "source": "WEB", "epoch": 1778245201.3824592}
+{"time": "18:30:11", "date": "2026-05-08", "msg": "Command sent: heater_off", "level": "INFO", "source": "GUI", "epoch": 1778245211.3873775}
+{"time": "18:30:11", "date": "2026-05-08", "msg": "Heater -> OFF", "level": "INFO", "source": "WEB", "epoch": 1778245211.969854}
+{"time": "18:30:28", "date": "2026-05-08", "msg": "SCADA shutdown requested", "level": "INFO", "source": "GUI", "epoch": 1778245228.7168536}
+{"time": "18:30:28", "date": "2026-05-08", "msg": "Web Dashboard shutting down", "level": "INFO", "source": "WEB", "epoch": 1778245228.8166602}
+{"time": "18:36:31", "date": "2026-05-08", "msg": "Web Dashboard started", "level": "INFO", "source": "WEB", "epoch": 1778245591.3401473}
+{"time": "18:36:31", "date": "2026-05-08", "msg": "Listening on http://10.248.240.125:5000", "level": "INFO", "source": "WEB", "epoch": 1778245591.3490634}
+{"time": "18:36:32", "date": "2026-05-08", "msg": "\u2705 SENSOR RESTORED", "level": "INFO", "source": "GUI", "epoch": 1778245592.098158}
+{"time": "18:40:07", "date": "2026-05-08", "msg": "Web Dashboard started", "level": "INFO", "source": "WEB", "epoch": 1778245807.6829329}
+{"time": "18:40:07", "date": "2026-05-08", "msg": "Listening on http://10.248.240.125:5000", "level": "INFO", "source": "WEB", "epoch": 1778245807.691816}
+{"time": "18:40:08", "date": "2026-05-08", "msg": "\u2705 SENSOR RESTORED", "level": "INFO", "source": "GUI", "epoch": 1778245808.2750845}
+{"time": "18:41:12", "date": "2026-05-08", "msg": "SCADA shutdown requested", "level": "INFO", "source": "GUI", "epoch": 1778245872.866197}
+{"time": "18:41:12", "date": "2026-05-08", "msg": "Web Dashboard shutting down", "level": "INFO", "source": "WEB", "epoch": 1778245872.9447808}
+{"time": "18:41:12", "date": "2026-05-08", "msg": "Web Dashboard shutting down", "level": "INFO", "source": "WEB", "epoch": 1778245872.9558735}
+{"time": "18:41:41", "date": "2026-05-08", "msg": "Web Dashboard started", "level": "INFO", "source": "WEB", "epoch": 1778245901.132549}
+{"time": "18:41:41", "date": "2026-05-08", "msg": "Listening on http://10.248.240.125:5000", "level": "INFO", "source": "WEB", "epoch": 1778245901.14184}
+{"time": "18:41:41", "date": "2026-05-08", "msg": "\u2705 SENSOR RESTORED", "level": "INFO", "source": "GUI", "epoch": 1778245901.4818017}
+{"time": "18:42:43", "date": "2026-05-08", "msg": "Command sent: heater_off", "level": "INFO", "source": "GUI", "epoch": 1778245963.9876852}
+{"time": "18:45:03", "date": "2026-05-08", "msg": "SCADA shutdown requested", "level": "INFO", "source": "GUI", "epoch": 1778246103.0768747}
+{"time": "18:45:03", "date": "2026-05-08", "msg": "Web Dashboard shutting down", "level": "INFO", "source": "WEB", "epoch": 1778246103.1670866}
+{"time": "19:21:48", "date": "2026-05-08", "msg": "Web Dashboard started", "level": "INFO", "source": "WEB", "epoch": 1778248308.7993162}
+{"time": "19:21:48", "date": "2026-05-08", "msg": "Listening on http://10.248.240.125:5000", "level": "INFO", "source": "WEB", "epoch": 1778248308.8231142}
+{"time": "19:21:50", "date": "2026-05-08", "msg": "\u2705 SENSOR RESTORED", "level": "INFO", "source": "GUI", "epoch": 1778248310.44399}
+{"time": "19:22:17", "date": "2026-05-08", "msg": "Command sent: motor_off", "level": "INFO", "source": "GUI", "epoch": 1778248337.1058967}
+{"time": "19:22:17", "date": "2026-05-08", "msg": "Motor -> OFF", "level": "INFO", "source": "GUI", "epoch": 1778248337.864495}

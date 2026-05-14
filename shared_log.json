@@ -1,0 +1,212 @@
+[
+  {
+    "time": "13:25:52",
+    "source": "core",
+    "msg": "SCADA GUI started \u2014 primary controller active",
+    "formatted": "[13:25:52]:[core]->[SCADA GUI started \u2014 primary controller active]"
+  },
+  {
+    "time": "13:25:54",
+    "source": "web(10.48.29.125)",
+    "msg": "Web Dashboard started \u2014 http://10.48.29.125:5000",
+    "formatted": "[13:25:54]:[web(10.48.29.125)]->[Web Dashboard started \u2014 http://10.48.29.125:5000]"
+  },
+  {
+    "time": "13:25:54",
+    "source": "core",
+    "msg": "\u2705 SENSOR RESTORED",
+    "formatted": "[13:25:54]:[core]->[\u2705 SENSOR RESTORED]"
+  },
+  {
+    "time": "13:26:50",
+    "source": "core",
+    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
+    "formatted": "[13:26:50]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
+  },
+  {
+    "time": "13:26:51",
+    "source": "core",
+    "msg": "\u2705 ALARM CLEARED",
+    "formatted": "[13:26:51]:[core]->[\u2705 ALARM CLEARED]"
+  },
+  {
+    "time": "13:26:51",
+    "source": "core",
+    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
+    "formatted": "[13:26:51]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
+  },
+  {
+    "time": "13:26:54",
+    "source": "core",
+    "msg": "\u2705 ALARM CLEARED",
+    "formatted": "[13:26:54]:[core]->[\u2705 ALARM CLEARED]"
+  },
+  {
+    "time": "13:27:09",
+    "source": "core",
+    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
+    "formatted": "[13:27:09]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
+  },
+  {
+    "time": "13:27:13",
+    "source": "core",
+    "msg": "\u2705 ALARM CLEARED",
+    "formatted": "[13:27:13]:[core]->[\u2705 ALARM CLEARED]"
+  },
+  {
+    "time": "13:27:14",
+    "source": "core",
+    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
+    "formatted": "[13:27:14]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
+  },
+  {
+    "time": "13:27:17",
+    "source": "core",
+    "msg": "\u2705 ALARM CLEARED",
+    "formatted": "[13:27:17]:[core]->[\u2705 ALARM CLEARED]"
+  },
+  {
+    "time": "13:27:53",
+    "source": "core",
+    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
+    "formatted": "[13:27:53]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
+  },
+  {
+    "time": "13:27:54",
+    "source": "core",
+    "msg": "\u2705 ALARM CLEARED",
+    "formatted": "[13:27:54]:[core]->[\u2705 ALARM CLEARED]"
+  },
+  {
+    "time": "13:27:58",
+    "source": "core",
+    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
+    "formatted": "[13:27:58]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
+  },
+  {
+    "time": "13:27:58",
+    "source": "core",
+    "msg": "\u2705 ALARM CLEARED",
+    "formatted": "[13:27:58]:[core]->[\u2705 ALARM CLEARED]"
+  },
+  {
+    "time": "13:28:42",
+    "source": "core",
+    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
+    "formatted": "[13:28:42]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
+  },
+  {
+    "time": "13:28:43",
+    "source": "core",
+    "msg": "\u2705 ALARM CLEARED",
+    "formatted": "[13:28:43]:[core]->[\u2705 ALARM CLEARED]"
+  },
+  {
+    "time": "13:28:57",
+    "source": "core",
+    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
+    "formatted": "[13:28:57]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
+  },
+  {
+    "time": "13:28:57",
+    "source": "core",
+    "msg": "\u2705 ALARM CLEARED",
+    "formatted": "[13:28:57]:[core]->[\u2705 ALARM CLEARED]"
+  },
+  {
+    "time": "13:29:00",
+    "source": "core",
+    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
+    "formatted": "[13:29:00]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
+  },
+  {
+    "time": "13:29:02",
+    "source": "core",
+    "msg": "\u2705 ALARM CLEARED",
+    "formatted": "[13:29:02]:[core]->[\u2705 ALARM CLEARED]"
+  },
+  {
+    "time": "13:29:26",
+    "source": "core",
+    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
+    "formatted": "[13:29:26]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
+  },
+  {
+    "time": "13:29:27",
+    "source": "core",
+    "msg": "\u2705 ALARM CLEARED",
+    "formatted": "[13:29:27]:[core]->[\u2705 ALARM CLEARED]"
+  },
+  {
+    "time": "13:29:27",
+    "source": "core",
+    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
+    "formatted": "[13:29:27]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
+  },
+  {
+    "time": "13:29:28",
+    "source": "core",
+    "msg": "\u2705 ALARM CLEARED",
+    "formatted": "[13:29:28]:[core]->[\u2705 ALARM CLEARED]"
+  },
+  {
+    "time": "13:29:29",
+    "source": "core",
+    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
+    "formatted": "[13:29:29]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
+  },
+  {
+    "time": "13:29:30",
+    "source": "core",
+    "msg": "\u2705 ALARM CLEARED",
+    "formatted": "[13:29:30]:[core]->[\u2705 ALARM CLEARED]"
+  },
+  {
+    "time": "13:29:32",
+    "source": "core",
+    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
+    "formatted": "[13:29:32]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
+  },
+  {
+    "time": "13:29:32",
+    "source": "core",
+    "msg": "\u2705 ALARM CLEARED",
+    "formatted": "[13:29:32]:[core]->[\u2705 ALARM CLEARED]"
+  },
+  {
+    "time": "13:29:39",
+    "source": "core",
+    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
+    "formatted": "[13:29:39]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
+  },
+  {
+    "time": "13:29:41",
+    "source": "core",
+    "msg": "\u2705 ALARM CLEARED",
+    "formatted": "[13:29:41]:[core]->[\u2705 ALARM CLEARED]"
+  },
+  {
+    "time": "13:30:21",
+    "source": "core",
+    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
+    "formatted": "[13:30:21]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
+  },
+  {
+    "time": "13:30:23",
+    "source": "core",
+    "msg": "\u2705 ALARM CLEARED",
+    "formatted": "[13:30:23]:[core]->[\u2705 ALARM CLEARED]"
+  },
+  {
+    "time": "13:30:24",
+    "source": "core",
+    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
+    "formatted": "[13:30:24]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
+  },
+  {
+    "time": "13:30:27",
+    "source": "core",
+    "msg": "\u2705 ALARM CLEARED",
+    "formatted": "[13:30:27]:[core]->[\u2705 ALARM CLEARED]"
+  }
+]

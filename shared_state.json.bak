@@ -1,0 +1,55 @@
+{
+  "telemetry": {
+    "distance": 94.86483764648438,
+    "pressure": 5.89,
+    "boiler_temp": 29.4,
+    "room_temp": 29.4,
+    "boiler_hum": 95,
+    "room_hum": 69,
+    "water_level": 55.14
+  },
+  "alarms": {
+    "low_level": false,
+    "high_level": false,
+    "high_pressure": false,
+    "low_pressure": false,
+    "any": false
+  },
+  "system": {
+    "mqtt_status": "CONNECTED",
+    "arduino_status": "CONNECTED",
+    "sensor_valid": true,
+    "dht_status": "READING"
+  },
+  "actuators": {
+    "heater": false,
+    "motor": false,
+    "override": null
+  },
+  "heartbeat_age": 1.8,
+  "raw": {
+    "heartbeat": 1778262896.4610116,
+    "arduino": {
+      "timestamp": "323002",
+      "sequence": 1048,
+      "distance": 94.86483764648438,
+      "pressure": 5.887499809265137
+    },
+    "dht": {
+      "room_temp": 29.4,
+      "room_hum": 69,
+      "boiler_temp": 29.4,
+      "boiler_hum": 95
+    },
+    "system": {
+      "arduino_status": "CONNECTED",
+      "dht_status": "READING",
+      "mqtt_status": "CONNECTED"
+    },
+    "actuator": {
+      "heater": false,
+      "motor": false,
+      "override": null
+    }
+  }
+}
