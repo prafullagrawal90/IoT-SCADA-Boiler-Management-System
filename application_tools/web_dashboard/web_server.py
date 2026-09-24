@@ -33,7 +33,7 @@ sys.path.append(PROJECT_ROOT)
 # CONFIG  — edit these at the top, nowhere else
 # ---------------------------------------------------------------
 WEB_PORT     = 5000
-WEB_PASSWORD = "1234"           # plain text — change here only
+WEB_PASSWORD = os.environ.get("WEB_PASSWORD", "1234")           # configurable via env var or default 1234
 VALID_COMMANDS = {"heater_on", "heater_off", "motor_on", "motor_off",
                   "emergency", "reset_override"}
 CLIENT_TIMEOUT = 8.0            # seconds before a client is considered disconnected

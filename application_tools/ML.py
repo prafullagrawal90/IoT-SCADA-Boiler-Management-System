@@ -52,6 +52,12 @@ PREDICTION_FILE = os.path.join(
     "ml_predictions.json"
 )
 
+# Event queue file — ML appends events here, GUI drains and logs them
+ML_EVENT_QUEUE_FILE = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+    "ml_event_queue.json"
+)
+
 # GUI acknowledgement signal file (GUI writes this to disarm auto-emergency)
 ACK_SIGNAL_FILE = os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
@@ -749,13 +755,35 @@ class MLPredictionEngine:
                         self._emergency_triggered = True
                         self._emergency_armed = False
                         self._emergency_tier = None
-                        # ---- LOG TO SHARED BUS (visible in GUI log + web dashboard) ----
-                        bus.log_event(
-                            f"\U0001f6a8 ML AUTO-EMERGENCY DEPLOYED [{tier}] "
-                            f"\u2014 No operator response within {self._emergency_countdown:.0f}s. "
-                            "Emergency shutdown command sent.",
-                            source="ml"
-                        )
+                        # ---- WRITE TO ml_event_queue.json (GUI polls this for its log panel) ----
+                        # bus.log_event() only reaches the web dashboard (different process).
+                        # The GUI drains ml_event_queue.json to show entries in its System Log.
+                        from datetime import datetime as _dt
+                        _ts = _dt.now().strftime("%H:%M:%S")
+                        _event = {
+                            "time": _ts,
+                            "source": "ml",
+                            "msg": (
+                                f"\U0001f6a8 ML AUTO-EMERGENCY DEPLOYED [{tier}] \u2014 "
+                                f"No operator response within {self._emergency_countdown:.0f}s. "
+                                "Emergency shutdown command sent."
+                            )
+                        }
+                        try:
+                            # Read existing queue, append, write back
+                            _q = []
+                            if os.path.exists(ML_EVENT_QUEUE_FILE):
+                                with open(ML_EVENT_QUEUE_FILE, "r") as _f:
+                                    _q = json.load(_f)
+                            _q.append(_event)
+                            _tmp = ML_EVENT_QUEUE_FILE + ".tmp"
+                            with open(_tmp, "w") as _f:
+                                json.dump(_q, _f)
+                            os.replace(_tmp, ML_EVENT_QUEUE_FILE)
+                        except Exception as _eq:
+                            print(f"[ML] Event queue write error: {_eq}")
+                        # Also log to shared bus for web dashboard
+                        bus.log_event(_event["msg"], source="ml")
                     else:
                         remaining = self._emergency_countdown - elapsed
                         if int(remaining) != int(remaining + 1):

@@ -1,0 +1,277 @@
+The system is: Linux - 6.12.62+rpt-rpi-v8 - aarch64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/3.25.1/CompilerIdC/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-AwuBQ4
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_24f10/fast && gmake[1]: Entering directory '/home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-AwuBQ4'
+/usr/bin/gmake  -f CMakeFiles/cmTC_24f10.dir/build.make CMakeFiles/cmTC_24f10.dir/build
+gmake[2]: Entering directory '/home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-AwuBQ4'
+Building C object CMakeFiles/cmTC_24f10.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_24f10.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.25/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+Target: arm-linux-gnueabihf
+Configured with: ../src/configure -v --with-pkgversion='Raspbian 12.2.0-14+rpi1+deb12u1' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6+fp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 12.2.0 (Raspbian 12.2.0-14+rpi1+deb12u1) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_24f10.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv6+fp' '-march=armv6+fp' '-dumpdir' 'CMakeFiles/cmTC_24f10.dir/'
+ /usr/lib/gcc/arm-linux-gnueabihf/12/cc1 -quiet -v -imultilib . -imultiarch arm-linux-gnueabihf /usr/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_24f10.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mfloat-abi=hard -mtls-dialect=gnu -marm -mlibarch=armv6+fp -march=armv6+fp -version -o /tmp/ccXQ6Mvm.s
+GNU C17 (Raspbian 12.2.0-14+rpi1+deb12u1) version 12.2.0 (arm-linux-gnueabihf)
+	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.25-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/arm-linux-gnueabihf"
+ignoring nonexistent directory "/usr/lib/gcc/arm-linux-gnueabihf/12/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/arm-linux-gnueabihf/12/../../../../arm-linux-gnueabihf/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/arm-linux-gnueabihf/12/include
+ /usr/local/include
+ /usr/include/arm-linux-gnueabihf
+ /usr/include
+End of search list.
+GNU C17 (Raspbian 12.2.0-14+rpi1+deb12u1) version 12.2.0 (arm-linux-gnueabihf)
+	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.25-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 13b6ccd5cac4f8e235cf12daeae5e5ae
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_24f10.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv6+fp' '-march=armv6+fp' '-dumpdir' 'CMakeFiles/cmTC_24f10.dir/'
+ as -v -march=armv6+fp -mfloat-abi=hard -meabi=5 -o CMakeFiles/cmTC_24f10.dir/CMakeCCompilerABI.c.o /tmp/ccXQ6Mvm.s
+GNU assembler version 2.40 (arm-linux-gnueabihf) using BFD version (GNU Binutils for Raspbian) 2.40
+COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/12/:/usr/lib/gcc/arm-linux-gnueabihf/12/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/12/:/usr/lib/gcc/arm-linux-gnueabihf/
+LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/12/:/usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/12/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_24f10.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv6+fp' '-march=armv6+fp' '-dumpdir' 'CMakeFiles/cmTC_24f10.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_24f10
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24f10.dir/link.txt --verbose=1
+/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_24f10.dir/CMakeCCompilerABI.c.o -o cmTC_24f10 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/12/lto-wrapper
+Target: arm-linux-gnueabihf
+Configured with: ../src/configure -v --with-pkgversion='Raspbian 12.2.0-14+rpi1+deb12u1' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6+fp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 12.2.0 (Raspbian 12.2.0-14+rpi1+deb12u1) 
+COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/12/:/usr/lib/gcc/arm-linux-gnueabihf/12/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/12/:/usr/lib/gcc/arm-linux-gnueabihf/
+LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/12/:/usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/12/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_24f10'  '-mfloat-abi=hard' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv6+fp' '-march=armv6+fp' '-dumpdir' 'cmTC_24f10.'
+ /usr/lib/gcc/arm-linux-gnueabihf/12/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCQb0Mr.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -o cmTC_24f10 /usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/12/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/12 -L/usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/12/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_24f10.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/arm-linux-gnueabihf/12/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_24f10'  '-mfloat-abi=hard' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv6+fp' '-march=armv6+fp' '-dumpdir' 'cmTC_24f10.'
+gmake[2]: Leaving directory '/home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-AwuBQ4'
+gmake[1]: Leaving directory '/home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-AwuBQ4'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/arm-linux-gnueabihf/12/include]
+    add: [/usr/local/include]
+    add: [/usr/include/arm-linux-gnueabihf]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/arm-linux-gnueabihf/12/include] ==> [/usr/lib/gcc/arm-linux-gnueabihf/12/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/arm-linux-gnueabihf] ==> [/usr/include/arm-linux-gnueabihf]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/arm-linux-gnueabihf/12/include;/usr/local/include;/usr/include/arm-linux-gnueabihf;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-AwuBQ4]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_24f10/fast && gmake[1]: Entering directory '/home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-AwuBQ4']
+  ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_24f10.dir/build.make CMakeFiles/cmTC_24f10.dir/build]
+  ignore line: [gmake[2]: Entering directory '/home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-AwuBQ4']
+  ignore line: [Building C object CMakeFiles/cmTC_24f10.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_24f10.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.25/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [Target: arm-linux-gnueabihf]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Raspbian 12.2.0-14+rpi1+deb12u1' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6+fp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 12.2.0 (Raspbian 12.2.0-14+rpi1+deb12u1) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_24f10.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv6+fp' '-march=armv6+fp' '-dumpdir' 'CMakeFiles/cmTC_24f10.dir/']
+  ignore line: [ /usr/lib/gcc/arm-linux-gnueabihf/12/cc1 -quiet -v -imultilib . -imultiarch arm-linux-gnueabihf /usr/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_24f10.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mfloat-abi=hard -mtls-dialect=gnu -marm -mlibarch=armv6+fp -march=armv6+fp -version -o /tmp/ccXQ6Mvm.s]
+  ignore line: [GNU C17 (Raspbian 12.2.0-14+rpi1+deb12u1) version 12.2.0 (arm-linux-gnueabihf)]
+  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.25-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/arm-linux-gnueabihf"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/arm-linux-gnueabihf/12/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/arm-linux-gnueabihf/12/../../../../arm-linux-gnueabihf/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/arm-linux-gnueabihf/12/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/arm-linux-gnueabihf]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Raspbian 12.2.0-14+rpi1+deb12u1) version 12.2.0 (arm-linux-gnueabihf)]
+  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.25-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 13b6ccd5cac4f8e235cf12daeae5e5ae]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_24f10.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv6+fp' '-march=armv6+fp' '-dumpdir' 'CMakeFiles/cmTC_24f10.dir/']
+  ignore line: [ as -v -march=armv6+fp -mfloat-abi=hard -meabi=5 -o CMakeFiles/cmTC_24f10.dir/CMakeCCompilerABI.c.o /tmp/ccXQ6Mvm.s]
+  ignore line: [GNU assembler version 2.40 (arm-linux-gnueabihf) using BFD version (GNU Binutils for Raspbian) 2.40]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/12/:/usr/lib/gcc/arm-linux-gnueabihf/12/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/12/:/usr/lib/gcc/arm-linux-gnueabihf/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/12/:/usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/12/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_24f10.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv6+fp' '-march=armv6+fp' '-dumpdir' 'CMakeFiles/cmTC_24f10.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_24f10]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24f10.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_24f10.dir/CMakeCCompilerABI.c.o -o cmTC_24f10 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/12/lto-wrapper]
+  ignore line: [Target: arm-linux-gnueabihf]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Raspbian 12.2.0-14+rpi1+deb12u1' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6+fp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 12.2.0 (Raspbian 12.2.0-14+rpi1+deb12u1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/12/:/usr/lib/gcc/arm-linux-gnueabihf/12/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/12/:/usr/lib/gcc/arm-linux-gnueabihf/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/12/:/usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/12/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_24f10'  '-mfloat-abi=hard' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv6+fp' '-march=armv6+fp' '-dumpdir' 'cmTC_24f10.']
+  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/12/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCQb0Mr.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu --as-needed -m armelf_linux_eabi -o cmTC_24f10 /usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/12/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/12 -L/usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/12/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_24f10.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/arm-linux-gnueabihf/12/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf/crtn.o]
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/12/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/12/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/12/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccCQb0Mr.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-armhf.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_24f10] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf/crt1.o] ==> obj [/usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf/crt1.o]
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf/crti.o] ==> obj [/usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf/crti.o]
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/12/crtbegin.o] ==> obj [/usr/lib/gcc/arm-linux-gnueabihf/12/crtbegin.o]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/12] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/12]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/12/../../..] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/12/../../..]
+    arg [-L/lib/arm-linux-gnueabihf] ==> dir [/lib/arm-linux-gnueabihf]
+    arg [-L/usr/lib/arm-linux-gnueabihf] ==> dir [/usr/lib/arm-linux-gnueabihf]
+    arg [CMakeFiles/cmTC_24f10.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/12/crtend.o] ==> obj [/usr/lib/gcc/arm-linux-gnueabihf/12/crtend.o]
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf/crtn.o] ==> obj [/usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf/crtn.o]
+  collapse obj [/usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf/crt1.o] ==> [/usr/lib/arm-linux-gnueabihf/crt1.o]
+  collapse obj [/usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf/crti.o] ==> [/usr/lib/arm-linux-gnueabihf/crti.o]
+  collapse obj [/usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf/crtn.o] ==> [/usr/lib/arm-linux-gnueabihf/crtn.o]
+  collapse library dir [/usr/lib/gcc/arm-linux-gnueabihf/12] ==> [/usr/lib/gcc/arm-linux-gnueabihf/12]
+  collapse library dir [/usr/lib/gcc/arm-linux-gnueabihf/12/../../../arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
+  collapse library dir [/usr/lib/gcc/arm-linux-gnueabihf/12/../../..] ==> [/usr/lib]
+  collapse library dir [/lib/arm-linux-gnueabihf] ==> [/lib/arm-linux-gnueabihf]
+  collapse library dir [/usr/lib/arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib/arm-linux-gnueabihf/crt1.o;/usr/lib/arm-linux-gnueabihf/crti.o;/usr/lib/gcc/arm-linux-gnueabihf/12/crtbegin.o;/usr/lib/gcc/arm-linux-gnueabihf/12/crtend.o;/usr/lib/arm-linux-gnueabihf/crtn.o]
+  implicit dirs: [/usr/lib/gcc/arm-linux-gnueabihf/12;/usr/lib/arm-linux-gnueabihf;/usr/lib;/lib/arm-linux-gnueabihf]
+  implicit fwks: []
+
+
+Determining if files sys/inotify.h exist passed with the following output:
+Change Dir: /home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-7F6fgh
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e4715/fast && gmake[1]: Entering directory '/home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-7F6fgh'
+/usr/bin/gmake  -f CMakeFiles/cmTC_e4715.dir/build.make CMakeFiles/cmTC_e4715.dir/build
+gmake[2]: Entering directory '/home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-7F6fgh'
+Building C object CMakeFiles/cmTC_e4715.dir/HAVE_SYS_INOTIFY_H.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_e4715.dir/HAVE_SYS_INOTIFY_H.c.o -c /home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-7F6fgh/HAVE_SYS_INOTIFY_H.c
+Linking C executable cmTC_e4715
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4715.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_e4715.dir/HAVE_SYS_INOTIFY_H.c.o -o cmTC_e4715 
+gmake[2]: Leaving directory '/home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-7F6fgh'
+gmake[1]: Leaving directory '/home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-7F6fgh'
+
+
+
+Determining if files linux/videodev2.h exist passed with the following output:
+Change Dir: /home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-AkirKX
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b4e05/fast && gmake[1]: Entering directory '/home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-AkirKX'
+/usr/bin/gmake  -f CMakeFiles/cmTC_b4e05.dir/build.make CMakeFiles/cmTC_b4e05.dir/build
+gmake[2]: Entering directory '/home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-AkirKX'
+Building C object CMakeFiles/cmTC_b4e05.dir/HAVE_LINUX_VIDEODEV2_H.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_b4e05.dir/HAVE_LINUX_VIDEODEV2_H.c.o -c /home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-AkirKX/HAVE_LINUX_VIDEODEV2_H.c
+Linking C executable cmTC_b4e05
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4e05.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_b4e05.dir/HAVE_LINUX_VIDEODEV2_H.c.o -o cmTC_b4e05 
+gmake[2]: Leaving directory '/home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-AkirKX'
+gmake[1]: Leaving directory '/home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-AkirKX'
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-IXh4RE
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e83d0/fast && gmake[1]: Entering directory '/home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-IXh4RE'
+/usr/bin/gmake  -f CMakeFiles/cmTC_e83d0.dir/build.make CMakeFiles/cmTC_e83d0.dir/build
+gmake[2]: Entering directory '/home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-IXh4RE'
+Building C object CMakeFiles/cmTC_e83d0.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_e83d0.dir/src.c.o -c /home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-IXh4RE/src.c
+Linking C executable cmTC_e83d0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e83d0.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_e83d0.dir/src.c.o -o cmTC_e83d0 
+gmake[2]: Leaving directory '/home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-IXh4RE'
+gmake[1]: Leaving directory '/home/raspberrypi/mjpg-streamer/mjpg-streamer-experimental/_build/CMakeFiles/CMakeScratch/TryCompile-IXh4RE'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+

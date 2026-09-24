@@ -1,0 +1,149 @@
+=========================================
+RASPBERRY PI SSH SERVICE OPERATIONS
+=========================================
+
+Check SSH service status
+------------------------
+sudo systemctl status ssh
+
+Start SSH service
+-----------------
+sudo systemctl start ssh
+
+Restart SSH service
+-------------------
+sudo systemctl restart ssh
+
+Stop SSH service
+----------------
+sudo systemctl stop ssh
+
+Enable SSH at boot
+------------------
+sudo systemctl enable ssh
+
+Disable SSH at boot
+-------------------
+sudo systemctl disable ssh
+
+
+=========================================
+NETWORK DIAGNOSTICS
+=========================================
+
+Show current IP address
+-----------------------
+hostname -I
+
+Show detailed network info
+--------------------------
+ip a
+
+Check default gateway
+---------------------
+ip route
+
+Check WiFi connection
+---------------------
+iwconfig
+
+Test internet connectivity
+--------------------------
+ping -c 4 google.com
+
+Test connection to controller PC
+--------------------------------
+ping <PC_IP_ADDRESS>
+
+
+=========================================
+SSH KEY MANAGEMENT
+=========================================
+
+Show authorized keys
+--------------------
+cat ~/.ssh/authorized_keys
+
+Edit authorized keys
+--------------------
+nano ~/.ssh/authorized_keys
+
+Remove all authorized keys
+--------------------------
+rm ~/.ssh/authorized_keys
+
+Fix SSH permissions
+-------------------
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+
+
+=========================================
+SYSTEM INFORMATION
+=========================================
+
+Check hostname
+--------------
+hostname
+
+Check full hostname
+-------------------
+hostname -f
+
+Check OS version
+----------------
+cat /etc/os-release
+
+Check kernel version
+--------------------
+uname -a
+
+Check CPU info
+--------------
+lscpu
+
+Check memory
+------------
+free -h
+
+Check disk usage
+----------------
+df -h
+
+
+=========================================
+SYSTEM CONTROL
+=========================================
+
+Reboot Raspberry Pi
+-------------------
+sudo reboot
+
+Shutdown Raspberry Pi
+---------------------
+sudo shutdown now
+
+Restart networking
+------------------
+sudo systemctl restart networking
+
+
+=========================================
+DEBUGGING SSH CONNECTIONS
+=========================================
+
+Check SSH logs
+--------------
+sudo journalctl -u ssh
+
+Show active SSH sessions
+------------------------
+who
+
+Show open ports
+---------------
+sudo ss -tulnp
+
+Check SSH port listening
+------------------------
+sudo ss -lntp | grep 22

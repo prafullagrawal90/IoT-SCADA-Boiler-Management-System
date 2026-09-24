@@ -1154,46 +1154,61 @@ class SCADAWindow(QWidget):
     # ------------------------------------------------
 
     def _poll_web_events(self):
-        """Drain web_event_queue.json, show in log, update Online Server status."""
-        queue_file = os.path.join(
-            os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-            "web_event_queue.json"
-        )
-        if not os.path.exists(queue_file):
-            return
-        try:
-            with open(queue_file, "r") as f:
-                events = json.load(f)
-            if not events:
-                return
-            # Clear queue atomically
-            tmp = queue_file + ".tmp"
-            with open(tmp, "w") as f:
-                json.dump([], f)
-            os.replace(tmp, queue_file)
-            # Log each event and update web status pill
-            for e in events:
-                msg = e.get("msg", "")
-                self.log_event(msg, source=e.get("source", "web"))
-                # Track client count and update pill
-                msg_low = msg.lower()
-                if "connected" in msg_low and "disconnected" not in msg_low:
-                    self._web_client_count = max(0, self._web_client_count + 1)
-                    self.web_status.setStyleSheet(status_style(DARK_GREEN))
-                elif "disconnected" in msg_low:
-                    self._web_client_count = max(0, self._web_client_count - 1)
-                    if self._web_client_count == 0:
-                        self.web_status.setStyleSheet(status_style(GREEN))
-                    else:
-                        self.web_status.setStyleSheet(status_style(DARK_GREEN))
-                elif "started" in msg_low:
-                    self._web_client_count = 0
-                    self.web_status.setStyleSheet(status_style(GREEN))
-                # Update label text with client count
-                n = self._web_client_count
-                self.web_status.setText(f"Online Server ({n})")
-        except Exception:
-            pass
+        """Drain web_event_queue.json and ml_event_queue.json, show in log."""
+        _root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+        # ---- WEB EVENT QUEUE ----
+        queue_file = os.path.join(_root, "web_event_queue.json")
+        if os.path.exists(queue_file):
+            try:
+                with open(queue_file, "r") as f:
+                    events = json.load(f)
+                if events:
+                    # Clear queue atomically
+                    tmp = queue_file + ".tmp"
+                    with open(tmp, "w") as f:
+                        json.dump([], f)
+                    os.replace(tmp, queue_file)
+                    # Log each event and update web status pill
+                    for e in events:
+                        msg = e.get("msg", "")
+                        self.log_event(msg, source=e.get("source", "web"))
+                        # Track client count and update pill
+                        msg_low = msg.lower()
+                        if "connected" in msg_low and "disconnected" not in msg_low:
+                            self._web_client_count = max(0, self._web_client_count + 1)
+                            self.web_status.setStyleSheet(status_style(DARK_GREEN))
+                        elif "disconnected" in msg_low:
+                            self._web_client_count = max(0, self._web_client_count - 1)
+                            if self._web_client_count == 0:
+                                self.web_status.setStyleSheet(status_style(GREEN))
+                            else:
+                                self.web_status.setStyleSheet(status_style(DARK_GREEN))
+                        elif "started" in msg_low:
+                            self._web_client_count = 0
+                            self.web_status.setStyleSheet(status_style(GREEN))
+                        # Update label text with client count
+                        n = self._web_client_count
+                        self.web_status.setText(f"Online Server ({n})")
+            except Exception:
+                pass
+
+        # ---- ML EVENT QUEUE (ML process writes here when it auto-deploys an emergency) ----
+        ml_queue_file = os.path.join(_root, "ml_event_queue.json")
+        if os.path.exists(ml_queue_file):
+            try:
+                with open(ml_queue_file, "r") as f:
+                    ml_events = json.load(f)
+                if ml_events:
+                    # Drain atomically
+                    tmp = ml_queue_file + ".tmp"
+                    with open(tmp, "w") as f:
+                        json.dump([], f)
+                    os.replace(tmp, ml_queue_file)
+                    for e in ml_events:
+                        self.log_event(e.get("msg", ""), source=e.get("source", "ml"))
+            except Exception:
+                pass
 
     def _poll_web_commands(self):
         """Poll shared bus for commands submitted by the web dashboard."""

@@ -19,7 +19,7 @@ from scada_application_layer import ScadaApplication
 # ---------------------------------------------------------------
 # CONFIG
 # ---------------------------------------------------------------
-WEB_PASSWORD       = "1234"
+WEB_PASSWORD       = os.environ.get("WEB_PASSWORD", "1234")
 BEEP_ALARM         = (1500, 1000)   # (freq_hz, duration_ms)
 BEEP_EMERGENCY     = (2000, 1000)
 BEEP_ACTUATOR      = (1000, 200)

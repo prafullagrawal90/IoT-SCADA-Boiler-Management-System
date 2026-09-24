@@ -1,0 +1,280 @@
+# Boiler Management System – System Stability Modifications
+
+## Overview
+
+This document records the system-level reliability modifications applied to the Raspberry Pi sensor gateway used in the **IoT Boiler Management System**.
+These changes were implemented to ensure **stable long-term operation (24/7 runtime)** and to eliminate known Linux and USB serial failure modes that can appear after extended uptime.
+
+The Raspberry Pi acts as a **sensor telemetry gateway** collecting data from:
+
+* Arduino (distance and pressure telemetry via USB serial)
+* DHT sensors (temperature and humidity)
+* MQTT pipeline (data transmission layer)
+
+The system is designed to run continuously, therefore several OS-level and device-level stability improvements were introduced.
+
+---
+
+# 1. Disabled Linux USB Autosuspend
+
+## Problem
+
+Linux automatically suspends USB devices when they appear idle to reduce power consumption.
+
+This behavior can cause USB serial devices such as **CH340 Arduino adapters** to stop transmitting data after long runtimes.
+
+Typical symptoms include:
+
+* Arduino still connected
+* Serial port still open
+* No incoming telemetry data
+
+This can occur after several hours or days of operation.
+
+## Solution
+
+USB autosuspend was disabled globally in the kernel boot parameters.
+
+### File Modified
+
+```
+/boot/firmware/cmdline.txt
+```
+
+### Parameter Added
+
+```
+usbcore.autosuspend=-1
+```
+
+### Example configuration
+
+```
+console=serial0,115200 console=tty1 root=PARTUUID=xxxx rootfstype=ext4 fsck.repair=yes rootwait usbcore.autosuspend=-1
+```
+
+Important notes:
+
+* The file must remain **a single line**
+* No line breaks should be added
+* Parameters must be separated by spaces
+
+### Verification
+
+Check autosuspend status using:
+
+```
+cat /sys/module/usbcore/parameters/autosuspend
+```
+
+Expected output:
+
+```
+-1
+```
+
+This confirms USB autosuspend is disabled.
+
+---
+
+# 2. Persistent Arduino Device Naming (udev Rule)
+
+## Problem
+
+Linux dynamically assigns serial device names such as:
+
+```
+/dev/ttyUSB0
+/dev/ttyUSB1
+/dev/ttyACM0
+```
+
+If the Arduino disconnects or the USB order changes, the device number may change.
+This can break software that expects a fixed serial port.
+
+## Solution
+
+A **persistent symbolic device name** was created using udev rules.
+
+### Arduino USB Identifier
+
+From `lsusb`:
+
+```
+ID 1a86:7523 QinHeng Electronics CH340 serial converter
+```
+
+Vendor ID: `1a86`
+Product ID: `7523`
+
+### udev Rule File
+
+```
+/etc/udev/rules.d/99-boiler-arduino.rules
+```
+
+### Rule Contents
+
+```
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", SYMLINK+="boiler_arduino", MODE="0666"
+```
+
+### Reload Rules
+
+```
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+```
+
+### Result
+
+A permanent device path is created:
+
+```
+/dev/boiler_arduino
+```
+
+This path always points to the Arduino regardless of USB numbering changes.
+
+### Example
+
+```
+/dev/boiler_arduino -> /dev/ttyUSB0
+```
+
+---
+
+# 3. Updated Python Serial Interface
+
+The sensor system now connects to the Arduino using the persistent device name:
+
+```python
+serial.Serial("/dev/boiler_arduino", 9600, timeout=1)
+```
+
+Benefits:
+
+* No port scanning required
+* No dependency on `/dev/ttyUSB0`
+* Stable connection after reconnection events
+
+---
+
+# 4. Serial Communication Hardening
+
+The Arduino communication layer includes protections against long-runtime issues.
+
+### Implemented Safeguards
+
+#### Serial Buffer Overflow Protection
+
+Serial input buffer is periodically flushed to prevent OS buffer buildup.
+
+Example method:
+
+```
+ser.reset_input_buffer()
+```
+
+#### Arduino Stall Detection
+
+If no valid data is received within a timeout window, the connection is automatically restarted.
+
+#### Automatic Reconnection
+
+The system automatically attempts to reconnect if the serial device becomes unavailable.
+
+---
+
+# 5. Sensor Data Validation
+
+Sensor readings are validated before being accepted by the system.
+
+Invalid or impossible readings are discarded.
+
+### Validation Ranges
+
+| Sensor      | Allowed Range  |
+| ----------- | -------------- |
+| Temperature | -40°C to 120°C |
+| Humidity    | 0% to 100%     |
+| Distance    | 2 cm to 500 cm |
+| Pressure    | > 0            |
+
+This prevents corrupted telemetry from propagating through the system.
+
+---
+
+# 6. Supervisor Architecture
+
+The telemetry system runs using **multiple independent processes** controlled by a supervisor.
+
+### Process Structure
+
+```
+Supervisor
+│
+├── Arduino Process
+├── DHT Sensor Process
+├── MQTT Process
+└── Watchdog Monitor
+```
+
+Advantages:
+
+* Fault isolation
+* Automatic restart capability
+* Reduced risk of system-wide crashes
+
+Shared data is handled using a multiprocessing manager.
+
+---
+
+# 7. DHT Sensor CPU Optimization
+
+DHT sensors use **pigpio hardware timing** instead of software timing.
+
+Benefits:
+
+* Reduces CPU usage significantly
+* Improves timing accuracy
+* Prevents blocking behavior
+
+Required services:
+
+```
+sudo apt install pigpio python3-pigpio
+sudo systemctl enable pigpiod
+sudo systemctl start pigpiod
+```
+
+---
+
+# 8. Reliability Improvements Achieved
+
+The system is now protected against the following failure modes:
+
+| Failure Mode           | Protection             |
+| ---------------------- | ---------------------- |
+| USB power suspension   | Disabled autosuspend   |
+| USB device renumbering | udev persistent device |
+| Arduino resets         | Auto reconnect         |
+| Serial buffer overflow | Periodic flush         |
+| Sensor glitches        | Data validation        |
+| Process crash          | Supervisor restart     |
+| CPU spikes             | pigpio timing          |
+
+---
+
+# Conclusion
+
+These modifications transform the Raspberry Pi into a **reliable industrial telemetry gateway** capable of long-term continuous operation.
+
+The system is now hardened against common Linux USB serial issues and sensor runtime failures that typically appear during extended deployments.
+
+Further improvements may include:
+
+* Hardware watchdog reset for Arduino
+* MQTT message buffering during network outages
+* Persistent telemetry logging
+* System health monitoring (CPU, RAM, temperature)

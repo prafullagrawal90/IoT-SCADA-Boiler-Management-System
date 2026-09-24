@@ -201,12 +201,39 @@ def monitor():
 
         if os.path.exists(heartbeat_file):
             last_update = os.path.getmtime(heartbeat_file)
+            stall_detected = (
+                time.time() - startup_time > 20      # past bootstrap window
+                and time.time() - last_update > 15   # heartbeat silent for 15s
+            )
+            # Respect cooldown — don't restart if we already did so recently.
+            # Without this the stall path fires every 2s (the loop delay),
+            # spawning multiple overlapping TELEMETRY processes.
+            now = time.time()
+            telem_last_restart = restart_times.get("TELEMETRY", 0)
+            stall_on_cooldown = (now - telem_last_restart < RESTART_COOLDOWN)
 
-            if time.time() - startup_time > 20 and time.time() - last_update > 15:
+            if stall_detected and not stall_on_cooldown:
                 print("[CORE] ❌ Telemetry stalled → restarting")
+                restart_times["TELEMETRY"] = now
 
-                processes["TELEMETRY"].terminate()
+                try:
+                    processes["TELEMETRY"].terminate()
+                except Exception:
+                    pass
+
+                # Remove the stale heartbeat file so the next loop iteration
+                # doesn't immediately re-trigger this same stall check.
+                try:
+                    os.remove(heartbeat_file)
+                except Exception:
+                    pass
+
                 processes["TELEMETRY"] = start_service("TELEMETRY", services["TELEMETRY"])
+
+            elif stall_detected and stall_on_cooldown:
+                remaining = RESTART_COOLDOWN - (now - telem_last_restart)
+                print(f"[CORE] ⏳ Telemetry stall restart suppressed (cooldown {remaining:.0f}s)")
+
         # -----------------------------
         # LOOP DELAY (LAST)
         # -----------------------------

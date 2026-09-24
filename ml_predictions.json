@@ -1,0 +1,79 @@
+{
+  "timestamp": 1779510978.0833454,
+  "overall_health": "CAUTION",
+  "overall_confidence": 0.75,
+  "sensors": {
+    "water_level": {
+      "status": "WARNING",
+      "confidence": 0.75,
+      "value": 20.54,
+      "issues": [
+        "FLATLINE detected: \u03c3=0.0000 over 15 readings \u2014 possible sensor failure or disconnection"
+      ],
+      "trend": "STABLE",
+      "readings_count": 60,
+      "mean": 20.89,
+      "std_dev": 0.517
+    },
+    "pressure": {
+      "status": "WARNING",
+      "confidence": 0.75,
+      "value": 5.51,
+      "issues": [
+        "FLATLINE detected: \u03c3=0.0000 over 15 readings \u2014 possible sensor failure or disconnection"
+      ],
+      "trend": "STABLE",
+      "readings_count": 60,
+      "mean": 5.51,
+      "std_dev": 0.0
+    },
+    "boiler_temp": {
+      "status": "WARNING",
+      "confidence": 0.75,
+      "value": 29.5,
+      "issues": [
+        "FLATLINE detected: \u03c3=0.0458 over 15 readings \u2014 possible sensor failure or disconnection"
+      ],
+      "trend": "STABLE",
+      "readings_count": 60,
+      "mean": 29.47,
+      "std_dev": 0.047
+    },
+    "room_temp": {
+      "status": "WARNING",
+      "confidence": 0.75,
+      "value": 29.3,
+      "issues": [
+        "FLATLINE detected: \u03c3=0.0000 over 15 readings \u2014 possible sensor failure or disconnection"
+      ],
+      "trend": "STABLE",
+      "readings_count": 60,
+      "mean": 29.3,
+      "std_dev": 0.0
+    },
+    "distance": {
+      "status": "WARNING",
+      "confidence": 0.75,
+      "value": 129.46,
+      "issues": [
+        "FLATLINE detected: \u03c3=0.0000 over 15 readings \u2014 possible sensor failure or disconnection"
+      ],
+      "trend": "STABLE",
+      "readings_count": 60,
+      "mean": 129.11,
+      "std_dev": 0.52
+    }
+  },
+  "diagnostics": [
+    "[WATER_LEVEL] FLATLINE detected: \u03c3=0.0000 over 15 readings \u2014 possible sensor failure or disconnection",
+    "[PRESSURE] FLATLINE detected: \u03c3=0.0000 over 15 readings \u2014 possible sensor failure or disconnection",
+    "[BOILER_TEMP] FLATLINE detected: \u03c3=0.0458 over 15 readings \u2014 possible sensor failure or disconnection",
+    "[ROOM_TEMP] FLATLINE detected: \u03c3=0.0000 over 15 readings \u2014 possible sensor failure or disconnection",
+    "[DISTANCE] FLATLINE detected: \u03c3=0.0000 over 15 readings \u2014 possible sensor failure or disconnection"
+  ],
+  "emergency_countdown": null,
+  "auto_emergency_armed": false,
+  "emergency_tier": null,
+  "correlation_warnings": [],
+  "system_status": "ACTIVE"
+}

@@ -1,5 +1,5 @@
 [2026-05-08 19:34:04] [INFO] Web Dashboard started
-[2026-05-08 19:34:04] [INFO] Listening on http://10.248.240.125:5000
+[2026-05-08 19:34:04] [INFO] Listening on http://192.168.1.100:5000
 [2026-05-08 19:34:05] [GUI_INFO] ✅ SENSOR RESTORED
 [2026-05-08 19:34:05] [INFO] Override -> OFF
 [2026-05-08 19:34:05] [OK] Mqtt Status: CONNECTED

@@ -1,212 +1,524 @@
 [
   {
-    "time": "13:25:52",
+    "time": "09:49:45",
     "source": "core",
     "msg": "SCADA GUI started \u2014 primary controller active",
-    "formatted": "[13:25:52]:[core]->[SCADA GUI started \u2014 primary controller active]"
+    "formatted": "[09:49:45]:[core]->[SCADA GUI started \u2014 primary controller active]"
   },
   {
-    "time": "13:25:54",
-    "source": "web(10.48.29.125)",
-    "msg": "Web Dashboard started \u2014 http://10.48.29.125:5000",
-    "formatted": "[13:25:54]:[web(10.48.29.125)]->[Web Dashboard started \u2014 http://10.48.29.125:5000]"
+    "time": "09:49:46",
+    "source": "web(192.168.1.100)",
+    "msg": "Web Dashboard started \u2014 http://192.168.1.100:5000",
+    "formatted": "[09:49:46]:[web(192.168.1.100)]->[Web Dashboard started \u2014 http://192.168.1.100:5000]"
   },
   {
-    "time": "13:25:54",
+    "time": "09:49:46",
     "source": "core",
     "msg": "\u2705 SENSOR RESTORED",
-    "formatted": "[13:25:54]:[core]->[\u2705 SENSOR RESTORED]"
+    "formatted": "[09:49:46]:[core]->[\u2705 SENSOR RESTORED]"
   },
   {
-    "time": "13:26:50",
+    "time": "09:49:59",
+    "source": "core",
+    "msg": "Command sent: heater_on",
+    "formatted": "[09:49:59]:[core]->[Command sent: heater_on]"
+  },
+  {
+    "time": "09:50:04",
+    "source": "core",
+    "msg": "Command sent: motor_on",
+    "formatted": "[09:50:04]:[core]->[Command sent: motor_on]"
+  },
+  {
+    "time": "09:50:09",
+    "source": "core",
+    "msg": "Command sent: heater_off",
+    "formatted": "[09:50:09]:[core]->[Command sent: heater_off]"
+  },
+  {
+    "time": "09:50:13",
+    "source": "core",
+    "msg": "Command sent: motor_off",
+    "formatted": "[09:50:13]:[core]->[Command sent: motor_off]"
+  },
+  {
+    "time": "09:50:43",
     "source": "core",
     "msg": "\ud83d\udea8 LOW LEVEL ALARM",
-    "formatted": "[13:26:50]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
+    "formatted": "[09:50:43]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
   },
   {
-    "time": "13:26:51",
+    "time": "09:50:52",
     "source": "core",
     "msg": "\u2705 ALARM CLEARED",
-    "formatted": "[13:26:51]:[core]->[\u2705 ALARM CLEARED]"
+    "formatted": "[09:50:52]:[core]->[\u2705 ALARM CLEARED]"
   },
   {
-    "time": "13:26:51",
+    "time": "09:52:36",
+    "source": "core",
+    "msg": "\u26a0\ufe0f SENSOR INVALID",
+    "formatted": "[09:52:36]:[core]->[\u26a0\ufe0f SENSOR INVALID]"
+  },
+  {
+    "time": "09:53:01",
+    "source": "core",
+    "msg": "\u2705 SENSOR RESTORED",
+    "formatted": "[09:53:01]:[core]->[\u2705 SENSOR RESTORED]"
+  },
+  {
+    "time": "09:53:01",
+    "source": "core",
+    "msg": "\ud83d\udea8 HIGH LEVEL ALARM",
+    "formatted": "[09:53:01]:[core]->[\ud83d\udea8 HIGH LEVEL ALARM]"
+  },
+  {
+    "time": "09:53:03",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 20s",
+    "formatted": "[09:53:03]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 20s]"
+  },
+  {
+    "time": "09:53:04",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 20s",
+    "formatted": "[09:53:04]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 20s]"
+  },
+  {
+    "time": "09:53:04",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 19s",
+    "formatted": "[09:53:04]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 19s]"
+  },
+  {
+    "time": "09:53:05",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 19s",
+    "formatted": "[09:53:05]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 19s]"
+  },
+  {
+    "time": "09:53:05",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 18s",
+    "formatted": "[09:53:05]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 18s]"
+  },
+  {
+    "time": "09:53:06",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 18s",
+    "formatted": "[09:53:06]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 18s]"
+  },
+  {
+    "time": "09:53:06",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 17s",
+    "formatted": "[09:53:06]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 17s]"
+  },
+  {
+    "time": "09:53:07",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 17s",
+    "formatted": "[09:53:07]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 17s]"
+  },
+  {
+    "time": "09:53:07",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 16s",
+    "formatted": "[09:53:07]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 16s]"
+  },
+  {
+    "time": "09:53:08",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 16s",
+    "formatted": "[09:53:08]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 16s]"
+  },
+  {
+    "time": "09:53:08",
+    "source": "core",
+    "msg": "\u2705 ALARM CLEARED",
+    "formatted": "[09:53:08]:[core]->[\u2705 ALARM CLEARED]"
+  },
+  {
+    "time": "09:53:08",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 15s",
+    "formatted": "[09:53:08]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 15s]"
+  },
+  {
+    "time": "09:53:09",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 15s",
+    "formatted": "[09:53:09]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 15s]"
+  },
+  {
+    "time": "09:53:31",
+    "source": "core",
+    "msg": "\ud83d\udea8 HIGH LEVEL ALARM",
+    "formatted": "[09:53:31]:[core]->[\ud83d\udea8 HIGH LEVEL ALARM]"
+  },
+  {
+    "time": "09:53:32",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 20s",
+    "formatted": "[09:53:32]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 20s]"
+  },
+  {
+    "time": "09:53:32",
+    "source": "core",
+    "msg": "\u2705 ALARM CLEARED",
+    "formatted": "[09:53:32]:[core]->[\u2705 ALARM CLEARED]"
+  },
+  {
+    "time": "09:53:33",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 20s",
+    "formatted": "[09:53:33]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 20s]"
+  },
+  {
+    "time": "09:56:59",
+    "source": "core",
+    "msg": "\u26a0\ufe0f SENSOR INVALID",
+    "formatted": "[09:56:59]:[core]->[\u26a0\ufe0f SENSOR INVALID]"
+  },
+  {
+    "time": "09:57:06",
+    "source": "core",
+    "msg": "\u2705 SENSOR RESTORED",
+    "formatted": "[09:57:06]:[core]->[\u2705 SENSOR RESTORED]"
+  },
+  {
+    "time": "09:57:31",
+    "source": "core",
+    "msg": "\ud83d\udea8 HIGH PRESSURE ALARM",
+    "formatted": "[09:57:31]:[core]->[\ud83d\udea8 HIGH PRESSURE ALARM]"
+  },
+  {
+    "time": "09:57:33",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 20s",
+    "formatted": "[09:57:33]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 20s]"
+  },
+  {
+    "time": "09:57:33",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 20s",
+    "formatted": "[09:57:33]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 20s]"
+  },
+  {
+    "time": "09:57:34",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 19s",
+    "formatted": "[09:57:34]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 19s]"
+  },
+  {
+    "time": "09:57:34",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 19s",
+    "formatted": "[09:57:34]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 19s]"
+  },
+  {
+    "time": "09:57:35",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 18s",
+    "formatted": "[09:57:35]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 18s]"
+  },
+  {
+    "time": "09:57:35",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 18s",
+    "formatted": "[09:57:35]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 18s]"
+  },
+  {
+    "time": "09:57:36",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 17s",
+    "formatted": "[09:57:36]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 17s]"
+  },
+  {
+    "time": "09:57:36",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 17s",
+    "formatted": "[09:57:36]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 17s]"
+  },
+  {
+    "time": "09:57:37",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 16s",
+    "formatted": "[09:57:37]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 16s]"
+  },
+  {
+    "time": "09:57:37",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 16s",
+    "formatted": "[09:57:37]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 16s]"
+  },
+  {
+    "time": "09:57:38",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 16s",
+    "formatted": "[09:57:38]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 16s]"
+  },
+  {
+    "time": "09:57:38",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 15s",
+    "formatted": "[09:57:38]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 15s]"
+  },
+  {
+    "time": "09:57:39",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 15s",
+    "formatted": "[09:57:39]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 15s]"
+  },
+  {
+    "time": "09:57:39",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 14s",
+    "formatted": "[09:57:39]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 14s]"
+  },
+  {
+    "time": "09:57:40",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 14s",
+    "formatted": "[09:57:40]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 14s]"
+  },
+  {
+    "time": "09:57:40",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 13s",
+    "formatted": "[09:57:40]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 13s]"
+  },
+  {
+    "time": "09:57:41",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 13s",
+    "formatted": "[09:57:41]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 13s]"
+  },
+  {
+    "time": "09:57:41",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 12s",
+    "formatted": "[09:57:41]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 12s]"
+  },
+  {
+    "time": "09:57:42",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 12s",
+    "formatted": "[09:57:42]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 12s]"
+  },
+  {
+    "time": "09:57:42",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 11s",
+    "formatted": "[09:57:42]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 11s]"
+  },
+  {
+    "time": "09:57:43",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 11s",
+    "formatted": "[09:57:43]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 11s]"
+  },
+  {
+    "time": "09:57:43",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 10s",
+    "formatted": "[09:57:43]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 10s]"
+  },
+  {
+    "time": "09:57:44",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 10s",
+    "formatted": "[09:57:44]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 10s]"
+  },
+  {
+    "time": "09:57:44",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 9s",
+    "formatted": "[09:57:44]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 9s]"
+  },
+  {
+    "time": "09:57:45",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 9s",
+    "formatted": "[09:57:45]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 9s]"
+  },
+  {
+    "time": "09:57:45",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 8s",
+    "formatted": "[09:57:45]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 8s]"
+  },
+  {
+    "time": "09:57:46",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 8s",
+    "formatted": "[09:57:46]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 8s]"
+  },
+  {
+    "time": "09:57:46",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 7s",
+    "formatted": "[09:57:46]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 7s]"
+  },
+  {
+    "time": "09:57:47",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 7s",
+    "formatted": "[09:57:47]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 7s]"
+  },
+  {
+    "time": "09:57:47",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 6s",
+    "formatted": "[09:57:47]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 6s]"
+  },
+  {
+    "time": "09:57:48",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 6s",
+    "formatted": "[09:57:48]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 6s]"
+  },
+  {
+    "time": "09:57:48",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 5s",
+    "formatted": "[09:57:48]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 5s]"
+  },
+  {
+    "time": "09:57:49",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 5s",
+    "formatted": "[09:57:49]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 5s]"
+  },
+  {
+    "time": "09:57:49",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 4s",
+    "formatted": "[09:57:49]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 4s]"
+  },
+  {
+    "time": "09:57:50",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 3s",
+    "formatted": "[09:57:50]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 3s]"
+  },
+  {
+    "time": "09:57:50",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 3s",
+    "formatted": "[09:57:50]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 3s]"
+  },
+  {
+    "time": "09:57:51",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 2s",
+    "formatted": "[09:57:51]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 2s]"
+  },
+  {
+    "time": "09:57:51",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 2s",
+    "formatted": "[09:57:51]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 2s]"
+  },
+  {
+    "time": "09:57:52",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 1s",
+    "formatted": "[09:57:52]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 1s]"
+  },
+  {
+    "time": "09:57:52",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 1s",
+    "formatted": "[09:57:52]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 1s]"
+  },
+  {
+    "time": "09:57:53",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 0s",
+    "formatted": "[09:57:53]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 0s]"
+  },
+  {
+    "time": "09:57:53",
+    "source": "ml",
+    "msg": "\ud83d\udea8 ML AUTO-EMERGENCY DEPLOYED [SINGLE] \u2014 No operator response within 20s. Emergency shutdown command sent.",
+    "formatted": "[09:57:53]:[ml]->[\ud83d\udea8 ML AUTO-EMERGENCY DEPLOYED [SINGLE] \u2014 No operator response within 20s. Emergency shutdown command sent.]"
+  },
+  {
+    "time": "09:57:53",
+    "source": "ml",
+    "msg": "ML [SINGLE]: Auto-emergency countdown: 0s",
+    "formatted": "[09:57:53]:[ml]->[ML [SINGLE]: Auto-emergency countdown: 0s]"
+  },
+  {
+    "time": "09:58:40",
+    "source": "core",
+    "msg": "\u2705 ALARM CLEARED",
+    "formatted": "[09:58:40]:[core]->[\u2705 ALARM CLEARED]"
+  },
+  {
+    "time": "09:58:48",
+    "source": "core",
+    "msg": "Command sent: reset_override",
+    "formatted": "[09:58:48]:[core]->[Command sent: reset_override]"
+  },
+  {
+    "time": "09:59:13",
+    "source": "core",
+    "msg": "Command sent: heater_on",
+    "formatted": "[09:59:13]:[core]->[Command sent: heater_on]"
+  },
+  {
+    "time": "09:59:23",
+    "source": "core",
+    "msg": "Command sent: heater_off",
+    "formatted": "[09:59:23]:[core]->[Command sent: heater_off]"
+  },
+  {
+    "time": "09:59:28",
+    "source": "web(192.168.1.100)",
+    "msg": "Web client connected: 192.168.1.100",
+    "formatted": "[09:59:28]:[web(192.168.1.100)]->[Web client connected: 192.168.1.100]"
+  },
+  {
+    "time": "10:02:23",
+    "source": "web(192.168.1.100)",
+    "msg": "Web client disconnected: 192.168.1.100",
+    "formatted": "[10:02:23]:[web(192.168.1.100)]->[Web client disconnected: 192.168.1.100]"
+  },
+  {
+    "time": "10:04:16",
+    "source": "web(192.168.1.100)",
+    "msg": "Web client connected: 192.168.1.100",
+    "formatted": "[10:04:16]:[web(192.168.1.100)]->[Web client connected: 192.168.1.100]"
+  },
+  {
+    "time": "10:04:58",
+    "source": "web(192.168.1.100)",
+    "msg": "Web client disconnected: 192.168.1.100",
+    "formatted": "[10:04:58]:[web(192.168.1.100)]->[Web client disconnected: 192.168.1.100]"
+  },
+  {
+    "time": "10:05:03",
+    "source": "web(192.168.1.100)",
+    "msg": "Web client connected: 192.168.1.100",
+    "formatted": "[10:05:03]:[web(192.168.1.100)]->[Web client connected: 192.168.1.100]"
+  },
+  {
+    "time": "10:05:16",
+    "source": "web(192.168.1.100)",
+    "msg": "Web client disconnected: 192.168.1.100",
+    "formatted": "[10:05:16]:[web(192.168.1.100)]->[Web client disconnected: 192.168.1.100]"
+  },
+  {
+    "time": "10:05:56",
     "source": "core",
     "msg": "\ud83d\udea8 LOW LEVEL ALARM",
-    "formatted": "[13:26:51]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
+    "formatted": "[10:05:56]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
   },
   {
-    "time": "13:26:54",
+    "time": "10:06:17",
     "source": "core",
-    "msg": "\u2705 ALARM CLEARED",
-    "formatted": "[13:26:54]:[core]->[\u2705 ALARM CLEARED]"
-  },
-  {
-    "time": "13:27:09",
-    "source": "core",
-    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
-    "formatted": "[13:27:09]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
-  },
-  {
-    "time": "13:27:13",
-    "source": "core",
-    "msg": "\u2705 ALARM CLEARED",
-    "formatted": "[13:27:13]:[core]->[\u2705 ALARM CLEARED]"
-  },
-  {
-    "time": "13:27:14",
-    "source": "core",
-    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
-    "formatted": "[13:27:14]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
-  },
-  {
-    "time": "13:27:17",
-    "source": "core",
-    "msg": "\u2705 ALARM CLEARED",
-    "formatted": "[13:27:17]:[core]->[\u2705 ALARM CLEARED]"
-  },
-  {
-    "time": "13:27:53",
-    "source": "core",
-    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
-    "formatted": "[13:27:53]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
-  },
-  {
-    "time": "13:27:54",
-    "source": "core",
-    "msg": "\u2705 ALARM CLEARED",
-    "formatted": "[13:27:54]:[core]->[\u2705 ALARM CLEARED]"
-  },
-  {
-    "time": "13:27:58",
-    "source": "core",
-    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
-    "formatted": "[13:27:58]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
-  },
-  {
-    "time": "13:27:58",
-    "source": "core",
-    "msg": "\u2705 ALARM CLEARED",
-    "formatted": "[13:27:58]:[core]->[\u2705 ALARM CLEARED]"
-  },
-  {
-    "time": "13:28:42",
-    "source": "core",
-    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
-    "formatted": "[13:28:42]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
-  },
-  {
-    "time": "13:28:43",
-    "source": "core",
-    "msg": "\u2705 ALARM CLEARED",
-    "formatted": "[13:28:43]:[core]->[\u2705 ALARM CLEARED]"
-  },
-  {
-    "time": "13:28:57",
-    "source": "core",
-    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
-    "formatted": "[13:28:57]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
-  },
-  {
-    "time": "13:28:57",
-    "source": "core",
-    "msg": "\u2705 ALARM CLEARED",
-    "formatted": "[13:28:57]:[core]->[\u2705 ALARM CLEARED]"
-  },
-  {
-    "time": "13:29:00",
-    "source": "core",
-    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
-    "formatted": "[13:29:00]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
-  },
-  {
-    "time": "13:29:02",
-    "source": "core",
-    "msg": "\u2705 ALARM CLEARED",
-    "formatted": "[13:29:02]:[core]->[\u2705 ALARM CLEARED]"
-  },
-  {
-    "time": "13:29:26",
-    "source": "core",
-    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
-    "formatted": "[13:29:26]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
-  },
-  {
-    "time": "13:29:27",
-    "source": "core",
-    "msg": "\u2705 ALARM CLEARED",
-    "formatted": "[13:29:27]:[core]->[\u2705 ALARM CLEARED]"
-  },
-  {
-    "time": "13:29:27",
-    "source": "core",
-    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
-    "formatted": "[13:29:27]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
-  },
-  {
-    "time": "13:29:28",
-    "source": "core",
-    "msg": "\u2705 ALARM CLEARED",
-    "formatted": "[13:29:28]:[core]->[\u2705 ALARM CLEARED]"
-  },
-  {
-    "time": "13:29:29",
-    "source": "core",
-    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
-    "formatted": "[13:29:29]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
-  },
-  {
-    "time": "13:29:30",
-    "source": "core",
-    "msg": "\u2705 ALARM CLEARED",
-    "formatted": "[13:29:30]:[core]->[\u2705 ALARM CLEARED]"
-  },
-  {
-    "time": "13:29:32",
-    "source": "core",
-    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
-    "formatted": "[13:29:32]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
-  },
-  {
-    "time": "13:29:32",
-    "source": "core",
-    "msg": "\u2705 ALARM CLEARED",
-    "formatted": "[13:29:32]:[core]->[\u2705 ALARM CLEARED]"
-  },
-  {
-    "time": "13:29:39",
-    "source": "core",
-    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
-    "formatted": "[13:29:39]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
-  },
-  {
-    "time": "13:29:41",
-    "source": "core",
-    "msg": "\u2705 ALARM CLEARED",
-    "formatted": "[13:29:41]:[core]->[\u2705 ALARM CLEARED]"
-  },
-  {
-    "time": "13:30:21",
-    "source": "core",
-    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
-    "formatted": "[13:30:21]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
-  },
-  {
-    "time": "13:30:23",
-    "source": "core",
-    "msg": "\u2705 ALARM CLEARED",
-    "formatted": "[13:30:23]:[core]->[\u2705 ALARM CLEARED]"
-  },
-  {
-    "time": "13:30:24",
-    "source": "core",
-    "msg": "\ud83d\udea8 LOW LEVEL ALARM",
-    "formatted": "[13:30:24]:[core]->[\ud83d\udea8 LOW LEVEL ALARM]"
-  },
-  {
-    "time": "13:30:27",
-    "source": "core",
-    "msg": "\u2705 ALARM CLEARED",
-    "formatted": "[13:30:27]:[core]->[\u2705 ALARM CLEARED]"
+    "msg": "SCADA shutdown requested",
+    "formatted": "[10:06:17]:[core]->[SCADA shutdown requested]"
   }
 ]

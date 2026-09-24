@@ -1,0 +1,422 @@
+What you built here is essentially a **mini IP-camera server**. Under the hood it’s a small distributed pipeline that turns a raw camera sensor into an HTTP video service. Let’s walk through the architecture the way a systems engineer would analyze it.
+
+First imagine the whole system as a flow of information rather than a Python program:
+
+```
+Raspberry Pi Camera Sensor
+        ↓
+libcamera stack (kernel driver)
+        ↓
+rpicam-vid encoder (MJPEG)
+        ↓
+stdout pipe
+        ↓
+Python capture thread
+        ↓
+Frame broadcast buffer
+        ↓
+HTTP MJPEG server
+        ↓
+Clients (browser / PyQt / monitoring GUI)
+```
+
+Every box in that chain has a specific responsibility.
+
+---
+
+# 1. Camera hardware layer
+
+The physical camera sensor is connected through the CSI interface to the Raspberry Pi SoC.
+
+```
+Camera sensor
+      ↓
+CSI bus
+      ↓
+ISP (Image Signal Processor)
+```
+
+The Linux **libcamera stack** controls exposure, gain, frame timing, and raw frame capture.
+
+Your Python program never touches this directly. Instead it relies on the command-line tool:
+
+```
+rpicam-vid
+```
+
+which sits on top of libcamera.
+
+Think of `rpicam-vid` as a **hardware interface adapter**.
+
+---
+
+# 2. Encoder process (rpicam-vid)
+
+Your server launches this command:
+
+```
+rpicam-vid --width 640 --height 480 --codec mjpeg -o -
+```
+
+Key idea:
+
+```
+-o -
+```
+
+means **write video to stdout**.
+
+So instead of saving to a file, the encoded MJPEG frames flow directly into a pipe connected to the Python process.
+
+Data flow becomes:
+
+```
+Camera → ISP → MJPEG encoder → stdout pipe
+```
+
+This is extremely efficient because:
+
+* encoding happens in native C
+* Python only handles already-compressed frames
+
+Typical frame structure arriving in Python:
+
+```
+FFD8 ... JPEG DATA ... FFD9
+```
+
+These are JPEG start/end markers.
+
+---
+
+# 3. Python capture thread
+
+Your program starts a dedicated thread:
+
+```
+capture_thread = threading.Thread(target=camera_capture)
+```
+
+This thread continuously reads the pipe from `rpicam-vid`.
+
+Core job of this thread:
+
+```
+stdout.read()
+      ↓
+buffer accumulation
+      ↓
+detect JPEG boundaries
+      ↓
+extract frame
+```
+
+So internally the algorithm is:
+
+```
+read chunk
+append to buffer
+search for JPEG start marker (FFD8)
+search for JPEG end marker (FFD9)
+extract frame
+```
+
+Once a frame is found it is stored in shared memory:
+
+```
+latest_frame
+```
+
+But here’s the clever upgrade you added:
+
+Instead of clients polling this variable, you now **broadcast frames using a condition variable**.
+
+```
+frame_condition.notify_all()
+```
+
+So the architecture becomes event-driven rather than polling.
+
+---
+
+# 4. Frame broadcast layer
+
+This is the core synchronization mechanism:
+
+```
+frame_condition = threading.Condition()
+```
+
+Workflow:
+
+Producer thread (camera capture):
+
+```
+frame ready
+      ↓
+store in latest_frame
+      ↓
+notify_all()
+```
+
+Consumer threads (HTTP clients):
+
+```
+wait()
+      ↓
+receive notification
+      ↓
+send frame to client
+```
+
+This eliminates CPU-wasting polling loops.
+
+Instead of:
+
+```
+check frame
+sleep
+check again
+```
+
+clients sleep until a frame arrives.
+
+This is why CPU usage dropped and latency improved.
+
+---
+
+# 5. HTTP MJPEG server
+
+Your server uses Python’s built-in HTTP framework:
+
+```
+BaseHTTPRequestHandler
+```
+
+plus a threaded server:
+
+```
+ThreadingMixIn
+```
+
+Meaning:
+
+```
+1 client = 1 thread
+```
+
+When a client connects:
+
+```
+GET /
+```
+
+the server starts an MJPEG stream.
+
+The response header:
+
+```
+Content-Type: multipart/x-mixed-replace; boundary=frame
+```
+
+tells the browser:
+
+> This connection will continuously send images separated by boundaries.
+
+The server then repeatedly sends:
+
+```
+--frame
+Content-Type: image/jpeg
+
+(binary JPEG frame)
+```
+
+This continues indefinitely.
+
+So the browser continuously decodes new JPEG frames.
+
+---
+
+# 6. Health endpoint
+
+You also implemented a diagnostic endpoint:
+
+```
+GET /health
+```
+
+Response:
+
+```
+OK
+```
+
+Purpose:
+
+Quick system health check without loading the video stream.
+
+Your controller program uses this to confirm the camera server is alive.
+
+---
+
+# 7. Client layer
+
+Any client can connect:
+
+```
+Browser
+PyQt GUI
+Monitoring system
+Mobile device
+```
+
+Because MJPEG is just HTTP.
+
+The pipeline becomes:
+
+```
+Client
+   ↓
+HTTP request
+   ↓
+MJPEG server thread
+   ↓
+frame_condition.wait()
+   ↓
+send frame
+```
+
+Multiple clients share the same frame buffer.
+
+Important property:
+
+```
+1 camera encoder
+N viewers
+```
+
+This avoids launching multiple camera processes.
+
+---
+
+# 8. Thread model
+
+Your server contains three main thread groups.
+
+```
+Thread 1
+Camera capture thread
+
+Thread 2
+HTTP server main thread
+
+Thread N
+Client streaming threads
+```
+
+Visualization:
+
+```
+              ┌──────────────┐
+              │ Camera Thread │
+              └───────┬──────┘
+                      │
+                latest_frame
+                      │
+               notify_all()
+                      │
+        ┌─────────────┼─────────────┐
+        │             │             │
+   Client Thread  Client Thread  Client Thread
+```
+
+---
+
+# 9. Performance characteristics
+
+Typical Raspberry Pi 4 values:
+
+```
+Resolution   : 640x480
+Frame rate   : 30 fps
+Latency      : ~150–250 ms
+CPU usage    : ~6–10%
+Clients      : 20–40 supported
+```
+
+Most CPU is used by the **encoder**, not Python.
+
+---
+
+# 10. Fault tolerance
+
+Your capture loop automatically restarts the encoder if it crashes:
+
+```
+if proc.poll() is not None:
+    restart encoder
+```
+
+This makes the server self-healing.
+
+So even if the camera driver crashes, the stream recovers automatically.
+
+---
+
+# 11. Final system architecture
+
+Putting everything together:
+
+```
+                Raspberry Pi
+              ─────────────────
+
+ Camera Sensor
+        │
+        ▼
+ libcamera driver
+        │
+        ▼
+ rpicam-vid MJPEG encoder
+        │
+        ▼
+ stdout pipe
+        │
+        ▼
+ Python capture thread
+        │
+        ▼
+ shared frame buffer
+        │
+        ▼
+ broadcast condition
+        │
+        ▼
+ HTTP MJPEG server
+        │
+        ▼
+ ┌───────────────┬───────────────┬───────────────┐
+ │ Browser       │ PyQt GUI      │ Monitoring PC │
+ └───────────────┴───────────────┴───────────────┘
+```
+
+---
+
+# Big picture insight
+
+What you built is basically a **software IP camera**.
+
+Cheap CCTV cameras internally run almost the same pipeline:
+
+```
+sensor → encoder → buffer → HTTP/RTSP server
+```
+
+The main difference is that commercial cameras usually stream **H264 over RTSP**, while your system uses **MJPEG over HTTP**.
+
+But architecturally, it’s the same idea.
+
+---
+
+If you want, I can also show you the **full architecture of your entire IoT Boiler Monitoring System** (PC controller + SSH + camera + GUI + diagnostics). That bigger picture is actually pretty interesting because it becomes a **distributed monitoring system** rather than just a camera server.

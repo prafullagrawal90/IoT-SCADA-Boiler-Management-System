@@ -53,7 +53,12 @@ class ScadaApplication:
             "heartbeat_age": 0
         }
         self.data_lock = Lock()
-        
+
+        # Debounce counters — prevent single glitch readings from firing alarms.
+        # A condition must persist for N consecutive packets before the alarm fires.
+        self._low_level_count  = 0   # counts consecutive packets with low-level condition
+        self._LOW_LEVEL_DEBOUNCE = 30 # require ~10s of continuous low-level before alarming (~3Hz × 10s)
+
         self.running = True
         
         # MQTT Client
@@ -139,7 +144,18 @@ class ScadaApplication:
             telemetry["water_level"] = round(level, 2)
             
             # Alarms
-            low_level_alarm = sensor_valid and raw_distance > 120
+            # low_level is debounced: sensor must report low level for at least
+            # _LOW_LEVEL_DEBOUNCE consecutive packets before alarming.
+            # This filters out the 0-reading glitches the ultrasonic sensor sends
+            # briefly during recovery from out-of-range conditions.
+            raw_low_level = sensor_valid and raw_distance > 120
+            if raw_low_level:
+                self._low_level_count = min(self._low_level_count + 1, self._LOW_LEVEL_DEBOUNCE)
+            else:
+                # Drop count faster on clear so the alarm releases promptly
+                self._low_level_count = max(self._low_level_count - 1, 0)
+            low_level_alarm = (self._low_level_count >= self._LOW_LEVEL_DEBOUNCE)
+
             high_level_alarm = sensor_valid and raw_distance < 20
             high_pressure_alarm = pressure > 9
             low_pressure_alarm = pressure < 1

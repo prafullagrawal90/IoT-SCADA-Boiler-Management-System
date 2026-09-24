@@ -1,16 +1,16 @@
 {"time": "18:12:34", "date": "2026-05-08", "msg": "Test event", "level": "INFO", "source": "TEST", "epoch": 1778244154.0157506}
 {"time": "18:12:34", "date": "2026-05-08", "msg": "Alarm test", "level": "ALARM", "source": "TEST", "epoch": 1778244154.0213397}
 {"time": "18:16:58", "date": "2026-05-08", "msg": "Web Dashboard started", "level": "INFO", "source": "WEB", "epoch": 1778244418.0178103}
-{"time": "18:16:58", "date": "2026-05-08", "msg": "Listening on http://10.248.240.125:5000", "level": "INFO", "source": "WEB", "epoch": 1778244418.0236642}
+{"time": "18:16:58", "date": "2026-05-08", "msg": "Listening on http://192.168.1.100:5000", "level": "INFO", "source": "WEB", "epoch": 1778244418.0236642}
 {"time": "18:16:58", "date": "2026-05-08", "msg": "Arduino Status: CONNECTED", "level": "OK", "source": "WEB", "epoch": 1778244418.8311975}
 {"time": "18:16:59", "date": "2026-05-08", "msg": "\u2705 SENSOR RESTORED", "level": "INFO", "source": "GUI", "epoch": 1778244419.9531915}
 {"time": "18:18:03", "date": "2026-05-08", "msg": "SCADA shutdown requested", "level": "INFO", "source": "GUI", "epoch": 1778244483.5313492}
 {"time": "18:21:55", "date": "2026-05-08", "msg": "Web Dashboard started", "level": "INFO", "source": "WEB", "epoch": 1778244715.8131926}
-{"time": "18:21:55", "date": "2026-05-08", "msg": "Listening on http://10.248.240.125:5000", "level": "INFO", "source": "WEB", "epoch": 1778244715.820486}
+{"time": "18:21:55", "date": "2026-05-08", "msg": "Listening on http://192.168.1.100:5000", "level": "INFO", "source": "WEB", "epoch": 1778244715.820486}
 {"time": "18:21:56", "date": "2026-05-08", "msg": "\u2705 SENSOR RESTORED", "level": "INFO", "source": "GUI", "epoch": 1778244716.5095398}
 {"time": "18:21:56", "date": "2026-05-08", "msg": "Web Dashboard shutting down", "level": "INFO", "source": "WEB", "epoch": 1778244716.629056}
 {"time": "18:23:15", "date": "2026-05-08", "msg": "Web Dashboard started", "level": "INFO", "source": "WEB", "epoch": 1778244795.0022488}
-{"time": "18:23:15", "date": "2026-05-08", "msg": "Listening on http://10.248.240.125:5000", "level": "INFO", "source": "WEB", "epoch": 1778244795.0096567}
+{"time": "18:23:15", "date": "2026-05-08", "msg": "Listening on http://192.168.1.100:5000", "level": "INFO", "source": "WEB", "epoch": 1778244795.0096567}
 {"time": "18:23:15", "date": "2026-05-08", "msg": "\u2705 SENSOR RESTORED", "level": "INFO", "source": "GUI", "epoch": 1778244795.4157314}
 {"time": "18:23:15", "date": "2026-05-08", "msg": "Arduino Status: CONNECTED", "level": "OK", "source": "WEB", "epoch": 1778244795.8227248}
 {"time": "18:23:41", "date": "2026-05-08", "msg": "\ud83d\udea8 HIGH LEVEL ALARM", "level": "INFO", "source": "GUI", "epoch": 1778244821.5361156}
@@ -90,7 +90,7 @@
 {"time": "18:26:58", "date": "2026-05-08", "msg": "SCADA shutdown requested", "level": "INFO", "source": "GUI", "epoch": 1778245018.034813}
 {"time": "18:26:58", "date": "2026-05-08", "msg": "Web Dashboard shutting down", "level": "INFO", "source": "WEB", "epoch": 1778245018.4622989}
 {"time": "18:28:28", "date": "2026-05-08", "msg": "Web Dashboard started", "level": "INFO", "source": "WEB", "epoch": 1778245108.361577}
-{"time": "18:28:28", "date": "2026-05-08", "msg": "Listening on http://10.248.240.125:5000", "level": "INFO", "source": "WEB", "epoch": 1778245108.369242}
+{"time": "18:28:28", "date": "2026-05-08", "msg": "Listening on http://192.168.1.100:5000", "level": "INFO", "source": "WEB", "epoch": 1778245108.369242}
 {"time": "18:28:28", "date": "2026-05-08", "msg": "Heater -> ON", "level": "INFO", "source": "WEB", "epoch": 1778245108.5777974}
 {"time": "18:28:28", "date": "2026-05-08", "msg": "Mqtt Status: CONNECTED", "level": "OK", "source": "WEB", "epoch": 1778245108.5994678}
 {"time": "18:28:28", "date": "2026-05-08", "msg": "Arduino Status: CONNECTED", "level": "OK", "source": "WEB", "epoch": 1778245108.623967}
@@ -102,22 +102,22 @@
 {"time": "18:30:28", "date": "2026-05-08", "msg": "SCADA shutdown requested", "level": "INFO", "source": "GUI", "epoch": 1778245228.7168536}
 {"time": "18:30:28", "date": "2026-05-08", "msg": "Web Dashboard shutting down", "level": "INFO", "source": "WEB", "epoch": 1778245228.8166602}
 {"time": "18:36:31", "date": "2026-05-08", "msg": "Web Dashboard started", "level": "INFO", "source": "WEB", "epoch": 1778245591.3401473}
-{"time": "18:36:31", "date": "2026-05-08", "msg": "Listening on http://10.248.240.125:5000", "level": "INFO", "source": "WEB", "epoch": 1778245591.3490634}
+{"time": "18:36:31", "date": "2026-05-08", "msg": "Listening on http://192.168.1.100:5000", "level": "INFO", "source": "WEB", "epoch": 1778245591.3490634}
 {"time": "18:36:32", "date": "2026-05-08", "msg": "\u2705 SENSOR RESTORED", "level": "INFO", "source": "GUI", "epoch": 1778245592.098158}
 {"time": "18:40:07", "date": "2026-05-08", "msg": "Web Dashboard started", "level": "INFO", "source": "WEB", "epoch": 1778245807.6829329}
-{"time": "18:40:07", "date": "2026-05-08", "msg": "Listening on http://10.248.240.125:5000", "level": "INFO", "source": "WEB", "epoch": 1778245807.691816}
+{"time": "18:40:07", "date": "2026-05-08", "msg": "Listening on http://192.168.1.100:5000", "level": "INFO", "source": "WEB", "epoch": 1778245807.691816}
 {"time": "18:40:08", "date": "2026-05-08", "msg": "\u2705 SENSOR RESTORED", "level": "INFO", "source": "GUI", "epoch": 1778245808.2750845}
 {"time": "18:41:12", "date": "2026-05-08", "msg": "SCADA shutdown requested", "level": "INFO", "source": "GUI", "epoch": 1778245872.866197}
 {"time": "18:41:12", "date": "2026-05-08", "msg": "Web Dashboard shutting down", "level": "INFO", "source": "WEB", "epoch": 1778245872.9447808}
 {"time": "18:41:12", "date": "2026-05-08", "msg": "Web Dashboard shutting down", "level": "INFO", "source": "WEB", "epoch": 1778245872.9558735}
 {"time": "18:41:41", "date": "2026-05-08", "msg": "Web Dashboard started", "level": "INFO", "source": "WEB", "epoch": 1778245901.132549}
-{"time": "18:41:41", "date": "2026-05-08", "msg": "Listening on http://10.248.240.125:5000", "level": "INFO", "source": "WEB", "epoch": 1778245901.14184}
+{"time": "18:41:41", "date": "2026-05-08", "msg": "Listening on http://192.168.1.100:5000", "level": "INFO", "source": "WEB", "epoch": 1778245901.14184}
 {"time": "18:41:41", "date": "2026-05-08", "msg": "\u2705 SENSOR RESTORED", "level": "INFO", "source": "GUI", "epoch": 1778245901.4818017}
 {"time": "18:42:43", "date": "2026-05-08", "msg": "Command sent: heater_off", "level": "INFO", "source": "GUI", "epoch": 1778245963.9876852}
 {"time": "18:45:03", "date": "2026-05-08", "msg": "SCADA shutdown requested", "level": "INFO", "source": "GUI", "epoch": 1778246103.0768747}
 {"time": "18:45:03", "date": "2026-05-08", "msg": "Web Dashboard shutting down", "level": "INFO", "source": "WEB", "epoch": 1778246103.1670866}
 {"time": "19:21:48", "date": "2026-05-08", "msg": "Web Dashboard started", "level": "INFO", "source": "WEB", "epoch": 1778248308.7993162}
-{"time": "19:21:48", "date": "2026-05-08", "msg": "Listening on http://10.248.240.125:5000", "level": "INFO", "source": "WEB", "epoch": 1778248308.8231142}
+{"time": "19:21:48", "date": "2026-05-08", "msg": "Listening on http://192.168.1.100:5000", "level": "INFO", "source": "WEB", "epoch": 1778248308.8231142}
 {"time": "19:21:50", "date": "2026-05-08", "msg": "\u2705 SENSOR RESTORED", "level": "INFO", "source": "GUI", "epoch": 1778248310.44399}
 {"time": "19:22:17", "date": "2026-05-08", "msg": "Command sent: motor_off", "level": "INFO", "source": "GUI", "epoch": 1778248337.1058967}
 {"time": "19:22:17", "date": "2026-05-08", "msg": "Motor -> OFF", "level": "INFO", "source": "GUI", "epoch": 1778248337.864495}
