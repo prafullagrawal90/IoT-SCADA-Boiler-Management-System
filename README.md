@@ -596,8 +596,8 @@ TOTAL MEASURED LATENCY:             ~324.0 ms (Observed bench average: < 400 ms)
 ### 3. Setting Up Supervisory Windows Station
 1. Clone the repository and navigate into the workspace:
    ```bash
-   git clone https://github.com/Nandish-508379/MINI_PROJECT_BOILER_MNGT_SYS_FINAL.git
-   cd MINI_PROJECT_BOILER_MNGT_SYS_FINAL
+   git clone https://github.com/Nandish-508379/IoT-SCADA-Boiler-Management-System.git
+   cd IoT-SCADA-Boiler-Management-System
    ```
 2. Create and activate a Python virtual environment:
    ```bash
