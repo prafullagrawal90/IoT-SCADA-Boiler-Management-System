@@ -668,9 +668,14 @@ Close the PyQt5 GUI window or press `Ctrl + C` in the `scada_core.py` console. T
 
 ## 👤 Author & Project Metadata
 
-- **Author**: **M NANDISH**  
+- **Author 1*: **M NANDISH**  
 - **Contact Email**: `nandish508379@gmail.com`  
-- **USN**: `1MS23ET073`  
+- **USN**: `1MS23ET073`
+- 
+- **Author 2**: **Prafull Agrawal**  
+- **Contact Email**: `prafullagrawal90@gmail.com`  
+- **USN**: `1MS23ET068`
+- 
 - **Degree Program**: Bachelor of Engineering (B.E.)  
 - **Department**: Department of Electronics & Telecommunication Engineering  
 - **Institution**: Ramaiah Institute of Technology (MSRIT), Bengaluru – 560054, Karnataka, India  
