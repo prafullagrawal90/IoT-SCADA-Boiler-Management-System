@@ -12,7 +12,7 @@
 [![Field](https://img.shields.io/badge/Field-Industrial%20IoT%20%7C%20SCADA%20%7C%20Edge%20Computing-blueviolet.svg)](#)
 
 > **IoT-SCADA Mini Project** | **Project ID: 002/2026** | **Year of Project: 2026**  
-> **Author**: **M NANDISH** (USN: `1MS23ET073`), Department of Electronics & Telecommunication Engineering, Ramaiah Institute of Technology (MSRIT), Bengaluru, Karnataka, India.  
+> **Author**: **Prafull Agrawal** (USN: `1MS23ET068`), Department of Electronics & Telecommunication Engineering, Ramaiah Institute of Technology (MSRIT), Bengaluru, Karnataka, India.  
 > An industrial-grade, three-tier IoT-integrated Supervisory Control and Data Acquisition (SCADA) system engineered for real-time boiler process monitoring, multi-heuristic anomaly detection, prioritized voice enunciations, and autonomous failsafe emergency response. Fuses field-level embedded sensing (Arduino Nano), edge computing & MQTT brokering (Raspberry Pi 4B), and supervisory analytics (Windows 11 PC) with deterministic COBS+CRC16 serial framing, sub-400 ms closed-loop latency, and tiered autonomous shutdown protocols.
 
 ---
